@@ -84,3 +84,61 @@ C:\Users\Aluno\Documents\orderflow\OrderFlow\obj\Debug\Order Flow.exe.config
 C:\Users\Aluno\Documents\orderflow\OrderFlow\obj\Debug\Order Flow.csproj.Up2Date
 C:\Users\Aluno\Documents\orderflow\OrderFlow\bin\Debug\Dapper.dll
 C:\Users\Aluno\Documents\orderflow\OrderFlow\bin\Debug\Dapper.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Order Flow.exe.config
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Order Flow.exe
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Order Flow.pdb
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Dapper.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Npgsql.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Buffers.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Collections.Immutable.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Memory.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Text.Json.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Threading.Channels.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Dapper.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Npgsql.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Buffers.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Collections.Immutable.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Memory.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Text.Json.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Threading.Channels.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.Form1.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.form_adicionar.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.form_historico.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.forms_editar.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.form_excluir.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order_Flow.Properties.Resources.resources
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.csproj.GenerateResource.cache
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.csproj.Up2Date
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.exe
+C:\Users\User\Documents\Orderflow\Main\obj\Debug\Order Flow.pdb
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.Core.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.CTe.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.DFe.Core.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.Core.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.CTe.pdb
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.CTe.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\ACBr.Net.DFe.Core.xml
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\Orderflow\Main\bin\Debug\Newtonsoft.Json.xml

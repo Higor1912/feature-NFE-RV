@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NFe>
+  <Emitente>
+    <CNPJ>12345678901234</CNPJ>
+    <IE>123456789</IE>
+    <Nome>Empresa Exemplo</Nome>
+    <Endereco>
+      <Logradouro>Rua Exemplo</Logradouro>
+      <Numero>123</Numero>
+      <Bairro>Centro</Bairro>
+      <Cidade>Cidade</Cidade>
+      <UF>SP</UF>
+      <CEP>12345678</CEP>
+    </Endereco>
+  </Emitente>
+</NFe>

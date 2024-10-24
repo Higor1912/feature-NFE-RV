@@ -1,0 +1,1022 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACBr.Net.CTe</name>
+    </assembly>
+    <members>
+        <member name="E:ACBr.Net.CTe.ACBrCTe.StatusChanged">
+            <summary>
+            Evento disparado quando o status do componente muda.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.ACBrCTe.Configuracoes">
+            <summary>
+            Retorna as configurações do ACBrCTe.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.ACBrCTe.Conhecimentos">
+            <summary>
+            Retorna a lista de CTes para processamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.ACBrCTe.Status">
+            <summary>
+            Retorna a situação do componente.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.ACBrCTe.DACTe">
+            <summary>
+            Componente para impressão do DACTe
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.Enviar(System.Int32,System.Boolean)">
+            <summary>
+            Metodo para enviar a(s) CTe(d) carregada(s) na coleção.
+            </summary>
+            <param name="lote">Número do lote.</param>
+            <param name="imprimir">Verdadeiro para imprimir o(s) CTe(s) retornado(s) com sucesso.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.Enviar(System.String,System.Boolean)">
+            <summary>
+            Metodo para enviar a(s) CTe(d) carregada(s) na coleção.
+            </summary>
+            <param name="lote">Número do lote.</param>
+            <param name="imprimir">Verdadeiro para imprimir o(s) CTe(s) retornado(s) com sucesso.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.ConsultaRecibo(System.String)">
+            <summary>
+            Consulta o recibo da CTe para saber se o mesmo ofi processado.
+            </summary>
+            <param name="recibo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.Consultar(System.String)">
+            <summary>
+            Metodo para checar a situação da CTe pela chave.
+            </summary>
+            <returns>A situação do serviço de CTe</returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.ConsultarSituacaoServico">
+            <summary>
+            Metodo para checar a situação do serviço de CTe.
+            </summary>
+            <returns>A situação do serviço de CTe</returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.Inutilizacao(System.String,System.String,System.Int32,ACBr.Net.CTe.ModeloCTe,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Metodo para inutilizar uma faixa de numeração do CTe.
+            </summary>
+            <param name="cnpj"></param>
+            <param name="aJustificativa"></param>
+            <param name="ano"></param>
+            <param name="modelo"></param>
+            <param name="serie"></param>
+            <param name="numeroInicial"></param>
+            <param name="numeroFinal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.EnviarEvento(System.Int32,System.String,System.String,ACBr.Net.CTe.IEventoCTe)">
+            <summary>
+            Metodo para enviar eventos da CTe.
+            </summary>
+            <param name="lote"></param>
+            <param name="nSeqEvento"></param>
+            <param name="chave"></param>
+            <param name="cnpj"></param>
+            <param name="evento"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.ConsultaCadastro(ACBr.Net.DFe.Core.Common.DFeCodUF,System.String,System.String)">
+            <summary>
+            Consulta Cadastro do contribuinte na SEFAZ.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.OnInitialize">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.ACBrCTe.OnDisposing">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfig.#ctor(ACBr.Net.CTe.ACBrCTe)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.CTe.Configuracao.CTeConfig"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfig.CreateConfigs">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.#ctor(ACBr.Net.CTe.ACBrCTe)">
+            <inheritdoc />
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.CTe.Configuracao.CTeConfigArquivos" />.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.PathCTe">
+            <summary>
+            Gets or sets the path n fe.
+            </summary>
+            <value>The path n fe.</value>
+        </member>
+        <member name="P:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.PathInu">
+            <summary>
+            Gets or sets the path lote.
+            </summary>
+            <value>The path lote.</value>
+        </member>
+        <member name="P:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.PathEvento">
+            <summary>
+            Gets or sets the path lote.
+            </summary>
+            <value>The path lote.</value>
+        </member>
+        <member name="P:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.EmissaoPathCTe">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.SalvarApenasCTeProcessados">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.GetPathCTe(System.Nullable{System.DateTime},System.String,ACBr.Net.CTe.ModeloCTe)">
+            <summary>
+            Retorna o caminho onde será salvo os CTes.
+            </summary>
+            <param name="data"></param>
+            <param name="cnpj"></param>
+            <param name="modelo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.GetPathInu(System.Nullable{System.DateTime},System.String)">
+             <summary>
+            
+             </summary>
+             <param name="data"></param>
+             <param name="cnpj"></param>
+             <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.GetPathEvento(ACBr.Net.CTe.CTeTipoEvento,System.String,System.Nullable{System.DateTime})">
+             <summary>
+            
+             </summary>
+             <param name="tipo"></param>
+             <param name="cnpj"></param>
+             <param name="data"></param>
+             <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.ArquivoServicoChange">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigArquivos.GetSchema(ACBr.Net.CTe.SchemaCTe)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigCertificados.#ctor(ACBr.Net.CTe.ACBrCTe)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.CTe.Configuracao.CTeConfigCertificados"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigGeral.#ctor(ACBr.Net.CTe.ACBrCTe)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.CTe.Configuracao.CTeConfigGeral"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Configuracao.CTeConfigWebServices.#ctor(ACBr.Net.CTe.ACBrCTe)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.CTe.Configuracao.CTeConfigWebServices"/> class.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.CTe.CTeInfRespTec">
+            <summary>
+              TRespTec - Informações do Responsável Técnico pela emissão do DF-e
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.CTeOS.Assinar(System.Security.Cryptography.X509Certificates.X509Certificate2,ACBr.Net.DFe.Core.Common.DFeSaveOptions)">
+            <summary>
+            Assina o CTe.
+            </summary>
+            <param name="certificado">The certificado.</param>
+            <param name="saveOptions">The save options.</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.CTeOS.GetXmlName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.CTe.DACTeBase">
+            <summary>
+            Classe base para os componentes de impressão do ACBrCTe.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.Imprimir(ACBr.Net.CTe.CTeProc[])">
+            <summary>
+            Imprime o DACTe do CTe.
+            </summary>
+            <param name="conhecimentos"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ImprimirPDF(ACBr.Net.CTe.CTeProc[])">
+            <summary>
+            Imprime o DACTe do CTe em PDF.
+            </summary>
+            <param name="conhecimentos"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ImprimirEvento(ACBr.Net.CTe.CTeProcEvento[])">
+            <summary>
+            Imprime um evento do CTe.
+            </summary>
+            <param name="eventos"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ImprimirEventoPDF(ACBr.Net.CTe.CTeProcEvento[])">
+            <summary>
+            Imprime um evento do CTe em PDF.
+            </summary>
+            <param name="eventos"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ImprimirInutilizacao(ACBr.Net.CTe.Services.InutilizaoResposta)">
+            <summary>
+            Imprime um evento de inutilizacao do CTe.
+            </summary>
+            <param name="inutilizao"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ImprimirInutilizacaoPDF(ACBr.Net.CTe.Services.InutilizaoResposta)">
+            <summary>
+            Imprime um evento de inutilizacao do CTe em PDF.
+            </summary>
+            <param name="inutilizao"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.DACTeBase.ParentChanged(ACBr.Net.CTe.ACBrCTe,ACBr.Net.CTe.ACBrCTe)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.CTe.CTe.Assinar(System.Security.Cryptography.X509Certificates.X509Certificate2,ACBr.Net.DFe.Core.Common.DFeSaveOptions)">
+            <summary>
+            Assina o CTe.
+            </summary>
+            <param name="certificado">The certificado.</param>
+            <param name="saveOptions">The save options.</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.CTe.ValidarAssinatura(System.Boolean)">
+            <summary>
+            Valida a assinatura da CTe.
+            </summary>
+            <param name="gerarXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.CTe.GetXmlName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:ACBr.Net.CTe.ConhecimentosCollection.Parent">
+            <summary>
+            Retorna a classe ACBrCTe parente da coleção.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.AddNewCTe">
+            <summary>
+              Adiciona um objeto ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <returns><see cref="T:ACBr.Net.CTe.CTe" /></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.AddNewCTeOS">
+            <summary>
+              Adiciona um objeto ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <returns><see cref="T:ACBr.Net.CTe.CTeOS" /></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Add(ACBr.Net.CTe.CTe)">
+            <summary>
+              Adiciona um objeto ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser adicionado ao final do <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Add(ACBr.Net.CTe.CTeOS)">
+            <summary>
+              Adiciona um objeto ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser adicionado ao final do <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.AddRange(System.Collections.Generic.IEnumerable{ACBr.Net.CTe.CTe})">
+            <summary>
+              Adiciona os elementos da coleção especificada ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="collection">
+              A coleção cujos elementos devem ser adicionados ao final do <see cref="T:System.Collections.Generic.List`1" />.
+               A coleção em si não pode ser <see langword="null" />, mas pode conter elementos que são <see langword="null" />, se o tipo <paramref name="T" /> é um tipo de referência.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+              <paramref name="collection" /> é <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.AddRange(System.Collections.Generic.IEnumerable{ACBr.Net.CTe.CTeOS})">
+            <summary>
+              Adiciona os elementos da coleção especificada ao final do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="collection">
+              A coleção cujos elementos devem ser adicionados ao final do <see cref="T:System.Collections.Generic.List`1" />.
+               A coleção em si não pode ser <see langword="null" />, mas pode conter elementos que são <see langword="null" />, se o tipo <paramref name="T" /> é um tipo de referência.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+              <paramref name="collection" /> é <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Contains(ACBr.Net.CTe.CTe)">
+            <summary>
+              Determina se um elemento está no <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser localizado no <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              <see langword="true" /> se <paramref name="item" /> for encontrado no <see cref="T:System.Collections.Generic.List`1" />; caso contrário, <see langword="false" />.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Contains(ACBr.Net.CTe.CTeOS)">
+            <summary>
+              Determina se um elemento está no <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser localizado no <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              <see langword="true" /> se <paramref name="item" /> for encontrado no <see cref="T:System.Collections.Generic.List`1" />; caso contrário, <see langword="false" />.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.IndexOf(ACBr.Net.CTe.CTe)">
+            <summary>
+              Pesquisa o objeto especificado e retorna o índice baseado em zero da primeira ocorrência dentro de todo o <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser localizado no <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              O índice baseado em zero da primeira ocorrência de <paramref name="item" /> em todo o <see cref="T:System.Collections.Generic.List`1" />, se encontrado; caso contrário, -1.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.IndexOf(ACBr.Net.CTe.CTeOS)">
+            <summary>
+              Pesquisa o objeto especificado e retorna o índice baseado em zero da primeira ocorrência dentro de todo o <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a ser localizado no <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              O índice baseado em zero da primeira ocorrência de <paramref name="item" /> em todo o <see cref="T:System.Collections.Generic.List`1" />, se encontrado; caso contrário, -1.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Insert(System.Int32,ACBr.Net.CTe.CTe)">
+             <summary>
+               Insere um elemento no <see cref="T:System.Collections.Generic.List`1" />, no índice especificado.
+             </summary>
+             <param name="index">
+               O índice de base zero no qual o <paramref name="item" /> deve ser inserido.
+             </param>
+             <param name="item">
+               O objeto a ser inserido.
+                O valor pode ser <see langword="null" /> para tipos de referência.
+             </param>
+             <exception cref="T:System.ArgumentOutOfRangeException">
+               <paramref name="index" /> é menor que 0.
+            
+               -ou-
+            
+               <paramref name="index" /> é maior que <see cref="P:System.Collections.Generic.List`1.Count" />.
+             </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Insert(System.Int32,ACBr.Net.CTe.CTeOS)">
+             <summary>
+               Insere um elemento no <see cref="T:System.Collections.Generic.List`1" />, no índice especificado.
+             </summary>
+             <param name="index">
+               O índice de base zero no qual o <paramref name="item" /> deve ser inserido.
+             </param>
+             <param name="item">
+               O objeto a ser inserido.
+                O valor pode ser <see langword="null" /> para tipos de referência.
+             </param>
+             <exception cref="T:System.ArgumentOutOfRangeException">
+               <paramref name="index" /> é menor que 0.
+            
+               -ou-
+            
+               <paramref name="index" /> é maior que <see cref="P:System.Collections.Generic.List`1.Count" />.
+             </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Remove(ACBr.Net.CTe.CTe)">
+            <summary>
+              Remove a primeira ocorrência de um objeto específico do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a remover do <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              <see langword="true" /> se <paramref name="item" /> for removido com êxito; caso contrário, <see langword="false" />.
+                Esse método também retornará <see langword="false" /> se <paramref name="item" /> não tiver sido encontrado no <see cref="T:System.Collections.Generic.List`1" />.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Remove(ACBr.Net.CTe.CTeOS)">
+            <summary>
+              Remove a primeira ocorrência de um objeto específico do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+            <param name="item">
+              O objeto a remover do <see cref="T:System.Collections.Generic.List`1" />.
+               O valor pode ser <see langword="null" /> para tipos de referência.
+            </param>
+            <returns>
+              <see langword="true" /> se <paramref name="item" /> for removido com êxito; caso contrário, <see langword="false" />.
+                Esse método também retornará <see langword="false" /> se <paramref name="item" /> não tiver sido encontrado no <see cref="T:System.Collections.Generic.List`1" />.
+            </returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.RemoveCTeAt(System.Int32)">
+             <summary>
+               Remove o elemento no índice especificado do <see cref="T:System.Collections.Generic.List`1" />.
+             </summary>
+             <param name="index">
+               O índice de base zero do elemento a ser removido.
+             </param>
+             <exception cref="T:System.ArgumentOutOfRangeException">
+               <paramref name="index" /> é menor que 0.
+            
+               -ou-
+            
+               <paramref name="index" /> é igual a ou maior que <see cref="P:System.Collections.Generic.List`1.Count" />.
+             </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.RemoveCTeOSAt(System.Int32)">
+             <summary>
+               Remove o elemento no índice especificado do <see cref="T:System.Collections.Generic.List`1" />.
+             </summary>
+             <param name="index">
+               O índice de base zero do elemento a ser removido.
+             </param>
+             <exception cref="T:System.ArgumentOutOfRangeException">
+               <paramref name="index" /> é menor que 0.
+            
+               -ou-
+            
+               <paramref name="index" /> é igual a ou maior que <see cref="P:System.Collections.Generic.List`1.Count" />.
+             </exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Clear">
+            <summary>
+              Remove todos os elementos do <see cref="T:System.Collections.Generic.List`1" />.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Load(System.String)">
+            <summary>
+            Carrega a CTe informada.
+            </summary>
+            <param name="path">Caminho da CTe.</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Load(System.IO.Stream)">
+            <summary>
+            Carrega a CTe informada.
+            </summary>
+            <param name="stream">Stream da CTe.</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Assinar">
+            <summary>
+            Assina as CTe não autorizadas.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Assinar(System.Security.Cryptography.X509Certificates.X509Certificate2,ACBr.Net.DFe.Core.Common.DFeSaveOptions)">
+            <summary>
+            Assina as CTe não autorizadas.
+            </summary>
+            <param name="certificado">O certificado.</param>
+            <param name="options"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.ConhecimentosCollection.Validar">
+            <summary>
+            Valida a CTe de acordo com o Schema.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Eventos.CTeEvCancCTe.#ctor">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:ACBr.Net.CTe.Eventos.CTeEvCancCTe"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvCancCTe.DescEvento">
+            <summary>
+            Define/retorna a descrição do evento, não alterar.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Eventos.CTeEvCCeCTe.#ctor">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:ACBr.Net.CTe.Eventos.CTeEvCCeCTe"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvCCeCTe.DescEvento">
+            <summary>
+            Define/retorna a descrição do evento, não alterar.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvCCeCTe.XCondUso">
+            <summary>
+            Define/retorna a condição de uso, não alterar.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Eventos.CTeEvEPEC.#ctor">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:ACBr.Net.CTe.Eventos.CTeEvEPEC"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvEPEC.DescEvento">
+            <summary>
+            Define/retorna a descrição do evento, não alterar.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvEPEC.XJust">
+            <summary>
+            Define/retorna a justificativa.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Eventos.CTeEvPrestDesacordo.#ctor">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:ACBr.Net.CTe.Eventos.CTeEvRegMultimodal"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvPrestDesacordo.DescEvento">
+            <summary>
+            Define/retorna a descrição do evento, não alterar.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Eventos.CTeEvRegMultimodal.#ctor">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:ACBr.Net.CTe.Eventos.CTeEvRegMultimodal"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeEvRegMultimodal.DescEvento">
+            <summary>
+            Define/retorna a descrição do evento, não alterar.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.Id">
+            <summary>
+                HP07 - Grupo de informações do registro do Evento
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.Orgao">
+            <summary>
+                HP08 - Código do órgão de recepção do Evento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.Ambiente">
+            <summary>
+                HP09 - Identificação do Ambiente: 1=Produção /2=Homologação
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.CNPJ">
+            <summary>
+                HP10 - CNPJ do autor do Evento
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.Chave">
+            <summary>
+                HP12 - Chave de Acesso da NF-e vinculada ao Evento
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.DhEvento">
+            <summary>
+                HP13 - Data e hora do evento no formato AAAA-MM-DDThh:mm:ssTZD (UTC - Universal Coordinated Time)
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.TpEvento">
+            <summary>
+                HP14 - Código do evento
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.NSeqEvento">
+            <summary>
+                HP15 - Sequencial do evento para o mesmo tipo de evento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Eventos.CTeInfEventoEnv.detEvento">
+            <summary>
+                HP17 - Informações do Pedido de Cancelamento
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.CTe.Services.CTeServiceClient`1">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <typeparam name="TService"></typeparam>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceClient`1.#ctor(ACBr.Net.CTe.Configuracao.CTeConfig,ACBr.Net.CTe.Services.TipoServicoCTe,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <inheritdoc />
+             <summary>
+             </summary>
+             <param name="config"></param>
+             <param name="service"></param>
+             <param name="certificado"></param>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.CTeServiceClient`1.Certificado">
+            <summary>
+            Retorna o certificado usado no serviço.
+            </summary>
+            <value>The certificado.</value>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceClient`1.DefineHeader">
+            <summary>
+            Retorna o cabeçalho para usar no envelope SOAP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceClient`1.GravarCTe(System.String,System.String,System.DateTime,System.String,ACBr.Net.CTe.ModeloCTe)">
+            <summary>
+            Salvar o arquivo xml do CTe no disco de acordo com as propriedades.
+            </summary>
+            <param name="conteudoArquivo"></param>
+            <param name="nomeArquivo"></param>
+            <param name="data"></param>
+            <param name="cnpj"></param>
+            <param name="modelo"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceClient`1.GravarEvento(System.String,System.String,ACBr.Net.CTe.CTeTipoEvento,System.DateTime,System.String)">
+            <summary>
+            Salvar o arquivo xml do Evento no disco de acordo com as propriedades.
+            </summary>
+            <param name="conteudoArquivo"></param>
+            <param name="nomeArquivo"></param>
+            <param name="evento"></param>
+            <param name="data"></param>
+            <param name="cnpj"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceClient`1.GravarInutilizacao(System.String,System.String,System.DateTime,System.String)">
+            <summary>
+            Salva o arquivo xml da inutilização no disco de acordo com as propriedades.
+            </summary>
+            <param name="conteudoArquivo"></param>
+            <param name="nomeArquivo"></param>
+            <param name="data"></param>
+            <param name="cnpj"></param>
+        </member>
+        <member name="T:ACBr.Net.CTe.Services.CTeServiceManager">
+            <summary>
+            Classe responsavel pelo gerenciamento das url dos serviço da CTe.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.CTeServiceManager.Servicos">
+            <summary>
+            Lista de serviços CTe.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.GetServiceAndress(ACBr.Net.CTe.CTeVersao,ACBr.Net.DFe.Core.Common.DFeSiglaUF,ACBr.Net.CTe.Services.TipoServicoCTe,ACBr.Net.DFe.Core.Common.DFeTipoEmissao,ACBr.Net.DFe.Core.Common.DFeTipoAmbiente)">
+            <summary>
+            Retorna a url do serviço de acordo com os dados passados.
+            </summary>
+            <param name="versao">Versão da CTe</param>
+            <param name="uf">UF do serviço</param>
+            <param name="tipo">Tipo de serviço</param>
+            <param name="tipoEmissao"></param>
+            <param name="ambiente">Ambiente</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.Save(System.String)">
+            <summary>
+            Salva o arquivo de serviços.
+            </summary>
+            <param name="path">Caminho para salvar o arquivo</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.Save(System.IO.Stream)">
+            <summary>
+            Salva o arquivo de serviços.
+            </summary>
+            <param name="stream">O stream.</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.Load(System.String)">
+            <summary>
+            Carrega o arquivo de serviços.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="clean">if set to <c>true</c> [clean].</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.Load(System.IO.Stream)">
+            <summary>
+            Carrega o arquivo de serviços.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="clean">if set to <c>true</c> [clean].</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.ImportIniACBr(System.String)">
+            <summary>
+            Função para importar endereços no padrão de Ini do ACBr.
+            </summary>
+            <param name="path">Caminho para o ini</param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeServiceManager.ImportIniACBr(System.IO.Stream)">
+            <summary>
+            Função para importar endereços no padrão de Ini do ACBr.
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.Id">
+            <summary>
+                DR04 - Identificador da TAG a ser assinada, somente precisa ser informado se a UF assinar a resposta.
+                Em caso de assinatura da resposta pela SEFAZ preencher o campo com o Nro do Protocolo, precedido com o literal
+                “ID”.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.TpAmb">
+            <summary>
+                DR05 - Identificação do Ambiente: 1 – Produção / 2 – Homologação
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.VerAplic">
+            <summary>
+                Versão do Aplicativo que processou o pedido de inutilização.
+                A versão deve ser iniciada com a sigla da UF nos casos de WS próprio ou a sigla SCAN, SVAN ou SVRS nos demais
+                casos.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.CStat">
+            <summary>
+                DR07 - Código do status da resposta (vide item 5.1.1).
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.XMotivo">
+            <summary>
+                DR08 - Descrição literal do status da resposta.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.CUF">
+            <summary>
+                DR09 - Código da UF que atendeu a solicitação
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.Ano">
+            <summary>
+                DR10 - Ano de inutilização da numeração
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.CNPJ">
+            <summary>
+                DR11 - CNPJ do emitente
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.Mod">
+            <summary>
+                DR12 - Modelo da NF-e
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.Serie">
+            <summary>
+                DR13 - Série da NF-e
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.NCtIni">
+            <summary>
+                DR14 - Número da NF-e inicial a ser inutilizada
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.NCtFin">
+            <summary>
+                DR15 - Número da NF-e final a ser inutilizada
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.DhRecbto">
+            <summary>
+                DR16 - Data e hora de processamento
+                Formato = AAAA-MM-DDTHH:MM:SS Preenchido com data e hora da gravação no Banco de Dados em caso de Confirmação.
+                Em caso de Rejeição, com data e hora do recebimento do Pedido.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.Services.InfInutRet.NProt">
+            <summary>
+                DR17 - Número do Protocolo de Inutilização (vide item 5.6).
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeRecepcaoEventoServiceClient.#ctor(ACBr.Net.CTe.Configuracao.CTeConfig,ACBr.Net.CTe.Services.TipoServicoCTe,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+              <summary>
+            
+              </summary>
+              <param name="config"></param>
+             <param name="service"></param>
+             <param name="certificado"></param>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeRecepcaoEventoServiceClient.RecepcaoEvento(System.Int32,System.String,System.String,ACBr.Net.CTe.IEventoCTe)">
+             <summary>
+            
+             </summary>
+             <param name="nSeqEvento"></param>
+             <param name="chave"></param>
+             <param name="cnpj"></param>
+             <param name="evento"></param>
+             <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.CTe.Services.CTeStatusServicoServiceClient.StatusServico">
+            <summary>
+            Consulta a situação do serviço da CTe.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.CTe.CTeInfCTeSub">
+            <inheritdoc />
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.Id">
+            <summary>
+                DP04 - Identificador da TAG a ser assinada formada com Código da UF + Ano (2 posições) + CNPJ + modelo + série +
+                nro inicial e nro final precedida do literal “ID”
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.TpAmb">
+            <summary>
+                DP05 - Identificação do Ambiente: 1 – Produção / 2 - Homologação
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.XServ">
+            <summary>
+                DP06 - Serviço solicitado: "INUTILIZAR"
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.CUF">
+            <summary>
+                DP07 - Código da UF do solicitante
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.Ano">
+            <summary>
+                DP08 - Ano de inutilização da numeração
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.CNPJ">
+            <summary>
+                DP09 - CNPJ do emitente
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.Mod">
+            <summary>
+                DP10 - Modelo da CT-e (57)
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.Serie">
+            <summary>
+                DP11 - Série da CT-e
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.NCtIni">
+            <summary>
+                DP12 - Número da NF-e inicial a ser inutilizada
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.NCtFin">
+            <summary>
+                DP13 - Número da NF-e final a ser inutilizada
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInfInutEnv.XJust">
+            <summary>
+                DP14 - Informar a justificativa do pedido de inutilização
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInutCTe.versao">
+            <summary>
+                DP02 - Versão do leiaute
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInutCTe.infInut">
+            <summary>
+                DP03 - Dados do Pedido
+                TAG a ser assinada
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeInutCTe.Signature">
+            <summary>
+                DP15 - Assinatura XML do grupo identificado pelo atributo “Id”
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeObsCont.XCampo">
+            <summary>
+            Identificação do campo
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.CTe.CTeObsFisco.XCampo">
+            <summary>
+            Identificação do campo
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.CTe.CTeTipoEvento">
+            <summary>
+            Tipos de eventos da CTe
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.CartaCorrecao">
+            <summary>
+            110110 - Carta de Correção
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.Cancelamento">
+            <summary>
+            110111 - Cancelamento
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.EPEC">
+            <summary>
+            110113 - EPEC
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.RegistroMultiModal">
+            <summary>
+            110160 - Registros do Multimodal
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.InfoGTV">
+            <summary>
+            110170 - Informações da GTV
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.RegistroPassagem">
+            <summary>
+            310620 - Registro de Passagem
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.RegistroPassagemAuto">
+            <summary>
+            510620 - Registro de Passagem Automático
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.MDFeAutorizado">
+            <summary>
+            310610 - MDF-e Autorizado
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.MDFeCancelado">
+            <summary>
+            310611 - MDF-e Cancelado
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.AutorizadoCTeComplementar">
+            <summary>
+            240130 - Autorizado CT-e Complementar
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.CanceladoCTeComplementar">
+            <summary>
+            240131 - Cancelado CT-e Complementar
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.CTeSubstituicao">
+            <summary>
+            240140 - CT-e de Substituição
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.CTeAnulacao">
+            <summary>
+            240150 - CT-e de Anulação
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.LiberacaoEPEC">
+            <summary>
+            240160 - Liberação de EPEC
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.LiberacaoPrazoCancelamento">
+            <summary>
+            240170 - Liberação Prazo Cancelamento
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.AutorizadoRedespacho">
+            <summary>
+            440130 - Autorizado Redespacho
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.AutorizadoRedespachoIntermediario">
+            <summary>
+            440140 - Autorizado Redespacho Intermediário
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.AutorizadoSubcontratacao">
+            <summary>
+            440150 - Autorizado Subcontratação
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.AutorizadoServicoVinculadoMultimodal">
+            <summary>
+            440160 - Autorizado Serviço Vinculado Multimodal
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.CTe.CTeTipoEvento.PrestacaoServicoDesacordo">
+            <summary>
+            610110 - Prestação do Serviço em Desacordo
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,3160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACBr.Net.Core</name>
+    </assembly>
+    <members>
+        <member name="T:ACBr.Net.Core.Extensions.ByteExtensions">
+            <summary>
+            Class ByteExtensions.
+            </summary>
+            <summary>
+            Class ByteExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ByteExtensions.ToImage(System.Byte[])">
+            <summary>
+            To the image.
+            </summary>
+            <param name="byteArrayIn">The byte array in.</param>
+            <returns>Image.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ByteExtensions.ToBase64(System.Byte[])">
+            <summary>
+            To the base64.
+            </summary>
+            <param name="byteArrayIn">The byte array in.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.ImageExtensions">
+            <summary>
+            Class ImageExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ImageExtensions.ToByteArray(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            To the byte array.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <param name="format">The format.</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ImageExtensions.ToBase64(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            To the base64.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <param name="format">The format.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ImageExtensions.ToStream(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            To the stream.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <param name="format">The format.</param>
+            <returns>MemoryStream.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ImageExtensions.ToFileStream(System.Drawing.Image,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            To the file stream.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="format">The format.</param>
+            <returns>FileStream.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ImageExtensions.AddPage(System.Drawing.Image,System.Drawing.Image)">
+            <summary>
+            Adds the page.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="toAdd">To add.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.ProcessExtensions">
+            <summary>
+            Class ProcessExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ProcessExtensions.GetOwner(System.Diagnostics.Process)">
+            <summary>
+            Gets the owner.
+            </summary>
+            <param name="process">The process.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.X509Certificate2Extensions">
+            <summary>
+            Extensões para Certificados
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.X509Certificate2Extensions.IsA3(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Retorna true se o certificado for do tipo A3.
+            </summary>
+            <param name="certificado">Certificado que deverá ser validado se é A3 ou não.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.X509Certificate2Extensions.SetPin(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)">
+            <summary>
+            Seta o pin do certificado se o mesmo for do tipo A3.
+            </summary>
+            <param name="certificado">O certificado</param>
+            <param name="pin">O pin</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.X509Certificate2Extensions.ForceUnload(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Força a liberação de certificado A3.
+            </summary>
+            <param name="certificado"></param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.X509Certificate2Extensions.GetCNPJ(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Retorna o CNPJ do certificado se o mesmo possuir.
+            </summary>
+            <param name="certificado">Certificado</param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.X509Certificate2Extensions.IsValid(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Verifica se o certificado digital esta dentro da validade.
+            <para>Verificar validade do certificado digital, se vencido dispara ArgumentException</para>
+            </summary>
+            <param name="certificado"></param>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.ArrayExtensions">
+            <summary>
+            Classe com métodos de extensão para arrays.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ArrayExtensions.IsNullOrEmpty(System.Array)">
+            <summary>Indicates whether the specified array is null or has a length of zero.</summary>
+            <param name="array">The array to test.</param>
+            <returns>true if the array parameter is null or has a length of zero; otherwise, false.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.AssemblyExtenssions">
+            <summary>
+            Classe AssemblyExtenssions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.AssemblyExtenssions.GetPath(System.Reflection.Assembly)">
+            <summary>
+            Gets the path.
+            </summary>
+            <param name="ass">The ass.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.CharExtensions">
+            <summary>
+            Classe CharExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.CharExtensions.ToInt32(System.Char,System.Int32)">
+            <summary>
+            To the int32.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="dRetorno">The d retorno.</param>
+            <returns>System.Int32.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.CharExtensions.IsEmpty(System.Char)">
+            <summary>
+            Determines whether the specified value is empty.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.DateTimeExtensions">
+            <summary>
+            Classe DateTimeExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.GetIdade(System.DateTime)">
+            <summary>
+            Gets the idade.
+            </summary>
+            <param name="dtNascimento">The dt nascimento.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.GetIdade(System.Nullable{System.DateTime})">
+            <summary>
+            Gets the idade.
+            </summary>
+            <param name="dtNascimento">The dt nascimento.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.GetIdadeFull(System.DateTime)">
+            <summary>
+            Gets the idade full.
+            </summary>
+            <param name="dtNascimento">The dt nascimento.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.GetIdadeFull(System.Nullable{System.DateTime})">
+            <summary>
+            Gets the idade full.
+            </summary>
+            <param name="dtNascimento">The dt nascimento.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.CalcularFatorVencimento(System.DateTime)">
+            <summary>
+            Calculars the fator vencimento.
+            </summary>
+            <param name="dataVencimento">The data vencimento.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DateTimeExtensions.ToJulianDate(System.DateTime)">
+            <summary>
+            To the julian date.
+            </summary>
+            <param name="data">The data.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.DecimalExtensions">
+            <summary>
+            Classe DecimalExtensions.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Extensions.DecimalExtensions.Qualificadores">
+            <summary>
+            The qualificadores
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Extensions.DecimalExtensions.Numeros">
+            <summary>
+            The numeros
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.DecimalPlacesCount(System.Decimal)">
+            <summary>
+            Decimals the places count.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.ToCurrency(System.Decimal,System.Int32,System.String,System.Char,System.Char)">
+            <summary>
+            To the currency.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="digits">The decimal places.</param>
+            <param name="prefix">The prefix.</param>
+            <param name="decimalsSeparator">The decimals separator.</param>
+            <param name="thousandsSeparator">The thousands separator.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.ToCurrency(System.Nullable{System.Decimal},System.Int32,System.String,System.Char,System.Char)">
+            <summary>
+            To the currency.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="digits">The decimal places.</param>
+            <param name="prefix">The prefix.</param>
+            <param name="decimalsSeparator">The decimals separator.</param>
+            <param name="thousandsSeparator">The thousands separator.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.InvertSignal(System.Decimal)">
+            <summary>
+            Inverts the signal.
+            </summary>
+            <param name="amount">The amount.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.InvertSignal(System.Nullable{System.Decimal})">
+            <summary>
+            Inverts the signal.
+            </summary>
+            <param name="amount">The amount.</param>
+            <returns>System.Nullable&lt;System.Decimal&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.ToExtension(System.Decimal,System.Boolean)">
+            <summary>
+            To the extension.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="invertersinal">if set to <c>true</c> [invertersinal].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.ToExtension(System.Nullable{System.Decimal},System.Boolean)">
+            <summary>
+            To the extension.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="invertersinal">if set to <c>true</c> [invertersinal].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.ToDecimalString(System.Decimal,System.Int32,System.Int32)">
+            <summary>
+            To the remessa string.
+            </summary>
+            <param name="ammount">The ammount.</param>
+            <param name="zerofill">The zerofill.</param>
+            <param name="decimalPlaces">The decimal places.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.GetPercentValue(System.Decimal,System.Decimal)">
+            <summary>
+            Gets the percent value.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="porcentagem">The porcentagem.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.GetPercentFromValue(System.Decimal,System.Decimal)">
+            <summary>
+            Gets the percent value.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="desconto">The desconto.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.GetValueFromPercent(System.Decimal,System.Decimal)">
+            <summary>
+            Gets the value from percent.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="porcentagem">The porcentagem.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.SubstractPercentValue(System.Decimal,System.Decimal)">
+            <summary>
+            Substracts the percent value.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="porcentagem">The porcentagem.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.AddPercentValue(System.Decimal,System.Decimal)">
+            <summary>
+            Adds the percent value.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="porcentagem">The porcentagem.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.CalcLucro(System.Decimal,System.Decimal)">
+            <summary>
+            Calculates the lucro.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="valorvenda">The valorvenda.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.GetParcelValue(System.Decimal,System.Int32)">
+            <summary>
+            Pegar o valor das parcelas
+            </summary>
+            <param name="value">The value.</param>
+            <param name="parcelas">The parcelas.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.Trunc(System.Decimal,System.Int32)">
+            <summary>
+            as the truncate.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="decimalPlaces">The decimal places.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.Frac(System.Decimal)">
+            <summary>
+            Fracs the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DecimalExtensions.RoundABNT(System.Decimal,System.Int32,System.Decimal)">
+            <summary>
+            Rounds the abnt.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="digits">The decimal places.</param>
+            <param name="delta">The delta.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.DictionaryExtension">
+            <summary>
+            Class DictionaryExtension.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DictionaryExtension.TryGet``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
+            <summary>
+            Tries the get.
+            </summary>
+            <typeparam name="TKey">The type of the tk.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <returns>V.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DictionaryExtension.TryGet``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">
+            <summary>
+            Tries the get.
+            </summary>
+            <typeparam name="TKey">The type of the t key.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>V.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.DoubleExtensions">
+            <summary>
+            Class DoubleExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DoubleExtensions.GetNumbersOfPage(System.Double,System.Int32)">
+            <summary>
+            Gets the numbers of page.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="pagesize">The pagesize.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.DoubleExtensions.ToExtension(System.Double)">
+            <summary>
+            To the extension.
+            </summary>
+            <param name="valor">The valor.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.EnumerableExtensions">
+            <summary>
+            Class EnumerableExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumerableExtensions.ToBindingList``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Transforma uma lista em uma BindingList.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list">A lista</param>
+            <returns>BindingList</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumerableExtensions.AsString(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Transforma uma lista de string em uma unica string.
+            </summary>
+            <param name="array">The array.</param>
+            <returns>String com todos os dados da lista de strings</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumerableExtensions.Cast(System.Collections.IEnumerable,System.Type)">
+            <summary>
+            Faz cast de um ienumerable para outro tipo
+            </summary>
+            <param name="lista"></param>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.EnumExtension">
+            <summary>
+            Class EnumExtension.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumExtension.GetDescription``1(``0)">
+            <summary>
+            Retorna a descrição do enum de acordo com o atributo DescriptionAttribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumExtension.GetDescription``1(``0,``0[],System.String[])">
+            <summary>
+            Retorna a descrição do enum de acordo com a lista informada.
+            </summary>
+            <param name="valor"></param>
+            <param name="valores"></param>
+            <param name="retornos"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EnumExtension.ToEnum``1(System.String,System.String[],``0[])">
+            <summary>
+            Retorna o enum de acordo com a lista informada.
+            </summary>
+            <param name="valor"></param>
+            <param name="valores"></param>
+            <param name="retornos"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.EventHandlerExtension">
+            <summary>
+            Classe EventHandlerExtension.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler,System.Object,System.EventArgs)">
+            <summary>
+            Chama o evento.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler,System.EventArgs)">
+            <summary>
+            Chama o evento com os argumentos passado.
+            Passando null para o sender.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Chama o evento.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise``1(System.EventHandler{``0},``0)">
+            <summary>
+            Chama o evento com os argumentos passado.
+            Passando null para o sender.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="eventHandler">The event handler.</param>
+            <param name="e">Argumentos do evento.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler{System.EventArgs},System.Object)">
+            <summary>
+            Chama o evento.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler{System.EventArgs})">
+            <summary>
+            Chama o evento.
+            Passando null para o sender e EventArgs.Empty
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler,System.Object)">
+            <summary>
+            Chama o evento.
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.EventHandlerExtension.Raise(System.EventHandler)">
+            <summary>
+            Chama o evento.
+            Passando null para o sender e EventArgs.Empty
+            </summary>
+            <param name="eventHandler">The event handler.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.IntExtensions">
+            <summary>
+            Classe IntExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.IntExtensions.IsDivisible(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the specified n is divisble for x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="n">The n.</param>
+            <returns><c>true</c> if the specified x is divisble; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.IntExtensions.IsOdd(System.Int32)">
+            <summary>
+            Determines whether the specified value is odd.
+            </summary>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if the specified value is odd; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.IntExtensions.ZeroFill(System.Nullable{System.Int32},System.Int32)">
+            <summary>
+            Zeroes the fill.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="length">The length.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.IntExtensions.ZeroFill(System.Int32,System.Int32)">
+            <summary>
+            Zeroes the fill.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="length">The length.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.ListExtension">
+            <summary>
+            Class IListExtension.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ListExtension.AddText(System.Collections.Generic.IList{System.String},System.String)">
+            <summary>
+            Adiciona uma string com quebra de linha na lista como se fosse uma ou mais linhas
+            </summary>
+            <param name="list">A lista.</param>
+            <param name="texto">O texto.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ListExtension.RemoveEmptyLines(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Remove as linhas vazias da lista.
+            </summary>
+            <param name="retorno">The retorno.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ListExtension.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the range.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list">The list.</param>
+            <param name="itens">The itens.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.LongExtensions">
+            <summary>
+            Class LongExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.LongExtensions.IsDivisible(System.Int64,System.Int32)">
+            <summary>
+            Determines whether the specified n is divisble for x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="n">The n.</param>
+            <returns><c>true</c> if the specified x is divisble; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.LongExtensions.IsOdd(System.Int64)">
+            <summary>
+            Determines whether the specified value is odd.
+            </summary>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if the specified value is odd; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.LongExtensions.ZeroFill(System.Nullable{System.Int64},System.Int32)">
+            <summary>
+            Zeroes the fill.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="length">The length.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.LongExtensions.ZeroFill(System.Int64,System.Int32)">
+            <summary>
+            Zeroes the fill.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="length">The length.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.ObjectExtension">
+            <summary>
+            Classe ObjectExtension.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.IsIn``1(``0,``0[])">
+            <summary>
+            Determines whether the specified t is in.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t">The t.</param>
+            <param name="values">The values.</param>
+            <returns><c>true</c> if the specified t is in; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.IsIn``1(``0,System.Linq.IQueryable{``0})">
+            <summary>
+            Determines whether the specified object is in.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="query">The query.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.IsIn``1(``0,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether the specified object is in.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="query">The query.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.EventAssigned``1(``0,System.String)">
+            <summary>
+            Determina se um evento esta setado ou não
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="classe">Classe</param>
+            <param name="evento">Nome do evento</param>
+            <returns><c>true</c> se o evento foi setado, <c>false</c> Senão.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.ThrowIfNull``1(``0,System.String)">
+            <summary>
+            Dispara <exception cref="T:System.ArgumentNullException">ArgumentNullException</exception> se o objeto for nulo.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">O item para checar se é nulo.</param>
+            <param name="name">O nome para lançar se na exception, se necessário</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.ThrowIfNull``1(``0)">
+            <summary>
+            Dispara <exception cref="T:System.ArgumentNullException">ArgumentNullException</exception> se o objeto for nulo.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">O item para checar se é nulo.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.IsNull``1(``0)">
+            <summary>
+            Determina se o valor é nulo ou não.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">O valor.</param>
+            <returns><c>true</c> se o valor especificado for nulo; caso contrario, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.ObjectExtension.IsBetween``1(``0,``0,``0)">
+            <summary>
+            Checar se o valor esta entre os valores informados.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">O valor.</param>
+            <param name="low">O mínimo.</param>
+            <param name="high">O máximo.</param>
+            <returns><c>true</c> se valor estiver entre o mínimo e o máximo, <c>false</c> se não.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.StreamExtensions">
+            <summary>
+            Class StreamExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StreamExtensions.CopyTo(System.IO.Stream,System.IO.Stream,System.Int32)">
+            <summary>
+            Copies to.
+            </summary>
+            <param name="input">The input.</param>
+            <param name="destination">The destination.</param>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StreamExtensions.AreEqual(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Ares the equal.
+            </summary>
+            <param name="input">The input.</param>
+            <param name="other">The other.</param>
+            <returns><c>true</c> if stream are equals, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.StringExtensions">
+            <summary>
+            Class StringExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts the specified data.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="password">The password.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao criptografar a string</exception>
+            <exception cref="T:System.Exception">Erro ao criptografar a string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts the specified data.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="password">The password.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao descriptografar string</exception>
+            <exception cref="T:System.Exception">Erro ao descriptografar string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Encrypt``1(System.String,System.String,System.String,System.String)">
+            <summary>
+            Encrypts the specified password.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value.</param>
+            <param name="password">The password.</param>
+            <param name="salt">The salt.</param>
+            <param name="vector">The vector.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException">Erro ao criptografar a string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Decrypt``1(System.String,System.String,System.String,System.String)">
+            <summary>
+            Decrypts the specified password.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value.</param>
+            <param name="password">The password.</param>
+            <param name="salt">The salt.</param>
+            <param name="vector">The vector.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException">Erro ao descriptografar string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToMd5Hash(System.String)">
+            <summary>
+            To the m d5 hash.
+            </summary>
+            <param name="input">The input.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao gerar hash MD5</exception>
+            <exception cref="T:System.Exception">Erro ao gerar hash MD5</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToSha1Hash(System.String)">
+            <summary>
+            To the sh a1 hash.
+            </summary>
+            <param name="input">The input.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao gerar SHA1 hash</exception>
+            <exception cref="T:System.Exception">Erro ao gerar SHA1 hash</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.StringReverse(System.String)">
+            <summary>
+            Strings the reverse.
+            </summary>
+            <param name="toReverse">To reverse.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao reverter string</exception>
+            <exception cref="T:System.Exception">Erro ao reverter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Formatar(System.String,System.String)">
+            <summary>
+            Formatars the specified valor.
+            </summary>
+            <param name="input">The input.</param>
+            <param name="mascara">The mascara.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception">Erro ao formatar string</exception>
+            <exception cref="T:System.Exception">Erro ao formatar string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDouble(System.String,System.Double)">
+            <summary>
+            To the double.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <returns>System.Double.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDouble(System.String,System.IFormatProvider)">
+            <summary>
+            To the double.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="format">The format.</param>
+            <returns>System.Double.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDouble(System.String,System.Double,System.IFormatProvider)">
+            <summary>
+            To the double.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <param name="format">The format.</param>
+            <returns>System.Double.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDecimal(System.String,System.Decimal)">
+            <summary>
+            To the decimal.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <returns>System.Decimal.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDecimal(System.String,System.IFormatProvider)">
+            <summary>
+            To the decimal.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="format">The format.</param>
+            <returns>System.Decimal.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDecimal(System.String,System.Decimal,System.IFormatProvider)">
+            <summary>
+            To the decimal.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <param name="format">The format.</param>
+            <returns>System.Decimal.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt32(System.String,System.Int32)">
+            <summary>
+            To the int32.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <returns>System.Int32.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt32(System.String,System.IFormatProvider)">
+            <summary>
+            To the int32.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="format">The format.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt32(System.String,System.Int32,System.IFormatProvider)">
+            <summary>
+            To the int32.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <param name="format">The format.</param>
+            <returns>System.Int32.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt64(System.String,System.Int64)">
+            <summary>
+            To the int64.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <returns>System.Int64.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt64(System.String,System.IFormatProvider)">
+            <summary>
+            To the int64.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="format">The format.</param>
+            <returns>System.Int64.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToInt64(System.String,System.Int64,System.IFormatProvider)">
+            <summary>
+            To the int64.
+            </summary>
+            <param name="dados">The dados.</param>
+            <param name="def">The definition.</param>
+            <param name="format">The format.</param>
+            <returns>Int64.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToData(System.String)">
+            <summary>
+            To the data.
+            </summary>
+            <param name="dados">The dados.</param>
+            <returns>DateTime.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToDataOffset(System.String)">
+            <summary>
+            To the data.
+            </summary>
+            <param name="dados">The dados.</param>
+            <returns>DateTime.</returns>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+            <exception cref="T:System.Exception">Erro ao converter string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.OnlyNumbers(System.String)">
+            <summary>
+            Retorna apenas os numeros da string.
+            </summary>
+            <param name="toNormalize">String para processar.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException">Erro ao processar a string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.RemoveMask(System.String)">
+            <summary>
+            Remove pontuações, espaços e traços de uma string, deixando apenas Dígitos e Letras
+            </summary>
+            <param name="str">String para processar.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException">Erro ao processar a string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsCep(System.String)">
+            <summary>
+            Determines whether the specified cep is cep.
+            </summary>
+            <param name="cep">The cep.</param>
+            <returns><c>true</c> if the specified cep is cep; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar CEP</exception>
+            <exception cref="T:System.Exception">Erro ao validar CEP</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsCPFOrCNPJ(System.String)">
+            <summary>
+            Checar se a string é um [CPF ou CNPJ] válido.
+            </summary>
+            <param name="cpfcnpj">CPFCNPJ</param>
+            <returns><c>true</c> se o [CPF ou CNPJ] é válido; senão, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsCPF(System.String,System.Boolean)">
+            <summary>
+            Checa se a string é um CPF válido.
+            </summary>
+            <param name="vrCPF">CPF</param>
+            <param name="ajustarTamanho">if set to <c>true</c> [ajustar tamanho].</param>
+            <returns><c>true</c> se o CPF for válido; senão, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar CPF</exception>
+            <exception cref="T:System.Exception">Erro ao validar CPF</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsCNPJ(System.String,System.Boolean)">
+            <summary>
+            Checa se a string é um CNPJ válido.
+            </summary>
+            <param name="vrCNPJ">CNPJ.</param>
+            <param name="ajustarTamanho">if set to <c>true</c> [ajustar tamanho].</param>
+            <returns><c>true</c> se o CNPJ for válido; senão, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar CNPJ</exception>
+            <exception cref="T:System.Exception">Erro ao validar CNPJ</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsIE(System.String,System.String)">
+            <summary>
+            Determines whether the specified p inscr is ie.
+            </summary>
+            <param name="pInscr">The p inscr.</param>
+            <param name="pUf">The p uf.</param>
+            <returns><c>true</c> if the specified p inscr is ie; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao IE</exception>
+            <exception cref="T:System.Exception">Erro ao IE</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormatarIE(System.String,System.String)">
+            <summary>
+            Formatars the ie.
+            </summary>
+            <param name="pInscr">The p inscr.</param>
+            <param name="pUf">The p uf.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ValidarUF(System.String)">
+            <summary>
+            Validars the uf.
+            </summary>
+            <param name="uf">The uf.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsPIS(System.String)">
+            <summary>
+            Determines whether the specified pis is pis.
+            </summary>
+            <param name="pis">The pis.</param>
+            <returns><c>true</c> if the specified pis is pis; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar PIS</exception>
+            <exception cref="T:System.Exception">Erro ao validar PIS</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsEmail(System.String)">
+            <summary>
+            Determines whether the specified email is email.
+            </summary>
+            <param name="email">The email.</param>
+            <returns><c>true</c> if the specified email is email; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar Email</exception>
+            <exception cref="T:System.Exception">Erro ao validar Email</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsSite(System.String)">
+            <summary>
+            Determines whether the specified site is site.
+            </summary>
+            <param name="site">The site.</param>
+            <returns><c>true</c> if the specified site is site; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.Exception">Erro ao validar endereço web</exception>
+            <exception cref="T:System.Exception">Erro ao validar endereço web</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsNumeric(System.String)">
+            <summary>
+            Verifica se a string é numerica.
+            </summary>
+            <param name="strNum">The string number.</param>
+            <returns>Retorna true/false se a string é numerica</returns>
+            <exception cref="T:System.Exception">Erro ao validar string</exception>
+            <exception cref="T:System.Exception">Erro ao validar string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToUtf8(System.String)">
+            <summary>
+            Converte a string para UTF8.
+            </summary>
+            <param name="value">The text.</param>
+            <returns>Uma string com a codificação UTF8</returns>
+            <exception cref="T:System.Exception">Erro ao codificar string</exception>
+            <exception cref="T:System.Exception">Erro ao codificar string</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.AsString(System.String[])">
+            <summary>
+            Transforma um array de string em uma unica string.
+            </summary>
+            <param name="array">The array.</param>
+            <returns>String com todos os dados do array de strings</returns>
+            <exception cref="T:System.Exception">Erro ao converter array</exception>
+            <exception cref="T:System.Exception">Erro ao converter array</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.StringFill(System.String,System.Int32,System.Char,System.Boolean)">
+            <summary>
+            Alinha a string a direita/esquerda e preenche com caractere informado ate ficar do tamanho especificado.
+            </summary>
+            <param name="text">O texto</param>
+            <param name="length">Tamanho final desejado</param>
+            <param name="with">Caractere para preencher</param>
+            <param name="esquerda">Direção do preenchimento</param>
+            <returns>String do tamanho especificado e se menor complementada com o caractere informado a direita/esquerda</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FillRight(System.String,System.Int32,System.Char)">
+            <summary>
+            Alinha a string a direita e preenche a esquerda com o caracter informado até ficar do tamanho especificado.
+            Se tamanho menor que a string atual retorna uma string do tamanho especificado.
+            </summary>
+            <param name="text">O texto.</param>
+            <param name="length">Tamanho final desejado</param>
+            <param name="with">Caractere para preencher</param>
+            <returns>String do tamanho especificado e se menor complementada com o caractere informado a esquerda</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FillLeft(System.String,System.Int32,System.Char)">
+            <summary>
+            Alinha a string a esquerda e preenche a direita com o caracter informado até ficar do tamanho especificado.
+            Se tamanho menor que a string atual retorna uma string do tamanho especificado.
+            </summary>
+            <param name="text">O texto.</param>
+            <param name="length">Tamanho final desejado</param>
+            <param name="with">Caractere para preencher</param>
+            <returns>String do tamanho especificado e se menor complementada com o caractere informado a direita</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ZeroFill(System.String,System.Int32)">
+            <summary>
+            Preenche uma string com zero a direita ate ficar do tamanho especificado.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="length">Tamanho final desejado</param>
+            <returns>String do tamanho especificado e se menor complementada com zero a direita/esquerda</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.RemoveAccent(System.String)">
+            <summary>
+            Substitui os caracteres acentuados de uma string.
+            </summary>
+            <param name="value">The text.</param>
+            <returns>String sem carateres especiais e normalizada</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.CleanCe(System.String)">
+            <summary>
+            Limpa os caracteres especiais de uma string.
+            </summary>
+            <param name="text">The text.</param>
+            <returns>String sem carateres especiais</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ReplaceAny(System.String,System.Collections.Generic.IEnumerable{System.Char},System.Char)">
+            <summary>
+            Subistitui todos os caracteres passado no array pelo novo caracter e retorna a nova string.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="oldChars">The old chars.</param>
+            <param name="newChar">The new character.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ReplaceAny(System.String,System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Subistitui todos os caracteres passado no array pelo novo caracter e retorna a nova string.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="oldChars">The old chars.</param>
+            <param name="newChar">The new character.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormataCPFCNPJ(System.String)">
+            <summary>
+            Formata o CPF ou CNPJ no formato: 000.000.000-00, 00.000.000/0001-00 respectivamente.
+            </summary>
+            <param name="value">The text.</param>
+            <returns>CPF/CNPJ Formatado</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormataCPF(System.String)">
+            <summary>
+            Formata o número do CPF 92074286520 para 920.742.865-20
+            </summary>
+            <param name="cpf">Sequencia numérica de 11 dígitos. Exemplo: 00000000000</param>
+            <returns>CPF formatado</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormataCNPJ(System.String)">
+            <summary>
+            Formata o CNPJ. Exemplo 00.316.449/0001-63
+            </summary>
+            <param name="cnpj">Sequencia numérica de 14 dígitos. Exemplo: 00000000000000</param>
+            <returns>CNPJ formatado</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormataCEP(System.String)">
+            <summary>
+            Formato o CEP em 00.000-000
+            </summary>
+            <param name="cep">Sequencia numérica de 8 dígitos. Exemplo: 00000000</param>
+            <returns>CEP formatado</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FormataAgenciaConta(System.String,System.String,System.String,System.String)">
+            <summary>
+            Formata agência e conta
+            </summary>
+            <param name="agencia">Código da agência</param>
+            <param name="digitoAgencia">Dígito verificador da agência. Pode ser vazio.</param>
+            <param name="conta">Código da conta</param>
+            <param name="digitoConta">dígito verificador da conta. Pode ser vazio.</param>
+            <returns>Agência e conta formatadas</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Right(System.String,System.Int32)">
+            <summary>
+            Get substring of specified number of characters on the right.
+            </summary>
+            <param name="value">The text.</param>
+            <param name="length">The length.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.FromJulianDate(System.String)">
+            <summary>
+            Froms the julian date.
+            </summary>
+            <param name="julianDate">The julian date.</param>
+            <returns>DateTime.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.SafeReplace(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Safes the replace.
+            </summary>
+            <param name="original">The original.</param>
+            <param name="wordToFind">The word to find.</param>
+            <param name="replacement">The replacement.</param>
+            <param name="ignorecase">if set to <c>true</c> [ignorecase].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.ToTitleCase(System.String)">
+            <summary>
+            To the title case.
+            </summary>
+            <param name="text">The text.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.IsEmpty(System.String)">
+            <summary>
+            Determines whether the specified value is null or empty or whitespace.
+            </summary>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if the specified value is empty; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Before(System.String,System.Int32)">
+            <summary>
+            Befores the specified end.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="end">The end.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.After(System.String,System.Int32)">
+            <summary>
+            Afters the specified start.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="start">The start.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.GetStrBetween(System.String,System.Int32,System.Int32)">
+            <summary>
+            Betweens the specified start.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="start">The start.</param>
+            <param name="end">The end.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Before(System.String,System.String)">
+            <summary>
+            Get string value after [first] a.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="before">The string inicio.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.After(System.String,System.String)">
+            <summary>
+            Get string value after [last] a.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="after">The string inicio.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.GetStrBetween(System.String,System.String,System.String)">
+            <summary>
+            Retorna a string que esta entre as duas string informadas.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="strInicio">The string inicio.</param>
+            <param name="strFinal">The string final.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Substitute(System.String,System.Object[])">
+            <summary>
+            Substitutes the specified arguments.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Base64Encode(System.String)">
+            <summary>
+            Base64s the encode.
+            </summary>
+            <param name="plainText">The plain text.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.Base64Decode(System.String)">
+            <summary>
+            Base64s the decode.
+            </summary>
+            <param name="base64EncodedData">The base64 encoded data.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.StripHtml(System.String)">
+            <summary>
+            Remove as tag HTML do texto.
+            </summary>
+            <param name="htmlString">The HTML string.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.StringExtensions.RemoveDoubleSpaces(System.String)">
+            <summary>
+            Remove os espaços duplicados da string.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Extensions.XmlNodeExtensions">
+            <summary>
+            Class XmlNodeExtensions.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.XmlNodeExtensions.AsString(System.Xml.XmlNode,System.Boolean,System.Boolean)">
+            <summary>
+            Retorna a XML como string
+            </summary>
+            <param name="xmlDoc">The XML document.</param>
+            <param name="identado">Se for <c>true</c> o XML sai [identado].</param>
+            <param name="showDeclaration">if set to <c>true</c> [show declaration].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.XmlNodeExtensions.AsString(System.Xml.XmlNode,System.Boolean,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Retorna a XML como string
+            </summary>
+            <param name="xmlDoc">The XML document.</param>
+            <param name="identado">Se for <c>true</c> o XML sai [identado].</param>
+            <param name="showDeclaration">if set to <c>true</c> [show declaration].</param>
+            <param name="encode">O enconding do XML.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.XmlNodeExtensions.AddTag(System.Xml.XmlNode,System.Xml.XmlNode[])">
+            <summary>
+            Adiciona varias tag ao documento ignorando os elementos nulos.
+            </summary>
+            <param name="xmlDoc">The XML document.</param>
+            <param name="tags">The tags.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Extensions.XmlNodeExtensions.GetValue``1(System.Xml.XmlNode,System.IFormatProvider)">
+            <summary>
+            Gets the value.
+            </summary>
+            <typeparam name="TType"></typeparam>
+            <param name="element">The element.</param>
+            <param name="format"></param>
+            <returns>T.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.ACBrComponent">
+            <summary>
+            Classe base para os componentes ACBr .Net
+            </summary>
+        </member>
+        <member name="E:ACBr.Net.Core.ACBrComponent.Disposed">
+            <summary>
+            Represents the method that handles the <see cref="E:System.ComponentModel.IComponent.Disposed" /> event of a component.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrComponent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrComponent"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrComponent.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:ACBr.Net.Core.ACBrComponent"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrComponent.DesignMode">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrComponent.OnInitialize">
+            <summary>
+            Função executada no inicio do componente.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrComponent.OnDisposing">
+            <summary>
+            Função executa no dispose do componente.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrComponent.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.Core.ACBrEncoding">
+            <summary>
+            Classe com enconding para facilitar o uso.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrEncoding.ISO88591">
+            <summary>
+            Retorna o enconding ISO-8859-1
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrEncoding.IBM850">
+            <summary>
+            Retorna o enconding IBM850
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrEncoding.IBM860">
+            <summary>
+            Retorna o enconding IBM860
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrEncoding.CP1252">
+            <summary>
+            Retorna o enconding CP1252
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrEncoding.Windows1252">
+            <summary>
+            Retorna o enconding Windows-1252
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException" /> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor(System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException"/> class.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor(System.Exception,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException"/> class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.ACBrException" /> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.ACBrExpandableObjectConverter">
+            <summary>
+            Classe ACBrExpandableObjectConverter.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrExpandableObjectConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts to.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="culture">The culture.</param>
+            <param name="value">The value.</param>
+            <param name="destType">Type of the dest.</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.ACBrStringWriter">
+            <summary>
+            Classe derivada da StringWriter que aceita a mudança de encond.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrStringWriter.#ctor">
+            <summary>
+            Inicializar uma nova instancida da classe <see cref="T:ACBr.Net.Core.ACBrStringWriter" />.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrStringWriter.#ctor(System.Text.Encoding)">
+            <summary>
+            Inicializar uma nova instancida da classe <see cref="T:ACBr.Net.Core.ACBrStringWriter" />.
+            </summary>
+            <param name="encoding"></param>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrStringWriter.Encoding">
+            <summary>Gets the <see cref="T:System.Text.Encoding" /> in which the output is written.</summary>
+            <returns>The Encoding in which the output is written.</returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="F:ACBr.Net.Core.CalcDigFormula.Modulo11">
+            <summary>
+            The modulo11
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.CalcDigFormula.Modulo10Pis">
+            <summary>
+            The modulo10 pis
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.CalcDigFormula.Modulo10">
+            <summary>
+            The modulo10
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.CalcDigito.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.CalcDigito" /> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.Documento">
+            <summary>
+            Gets or sets the documento.
+            </summary>
+            <value>The documento.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.MultiplicadorInicial">
+            <summary>
+            Gets or sets the multiplicador inicial.
+            </summary>
+            <value>The multiplicador inicial.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.MultiplicadorFinal">
+            <summary>
+            Gets or sets the multiplicador final.
+            </summary>
+            <value>The multiplicador final.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.MultiplicadorAtual">
+            <summary>
+            Gets or sets the multiplicador atual.
+            </summary>
+            <value>The multiplicador atual.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.DigitoFinal">
+            <summary>
+            Gets or sets the digito final.
+            </summary>
+            <value>The digito final.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.ModuloFinal">
+            <summary>
+            Gets or sets the modulo final.
+            </summary>
+            <value>The modulo final.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.SomaDigitos">
+            <summary>
+            Gets or sets the soma digitos.
+            </summary>
+            <value>The soma digitos.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.CalcDigito.FormulaDigito">
+            <summary>
+            Gets or sets the formula digito.
+            </summary>
+            <value>The formula digito.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.CalcDigito.Calcular">
+            <summary>
+            Calcula o digito verificador
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.CalcDigito.CalculoPadrao">
+            <summary>
+            Calculoes the padrao.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.Core.Exceptions.Guard">
+            <summary>
+            Helper class for guard statements, which allow prettier
+            code for guard clauses
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Exceptions.Guard.Against(System.Boolean,System.String)">
+            <summary>
+            Will throw a <see cref="T:System.InvalidOperationException" /> if the assertion
+            is true, with the specificied message.
+            </summary>
+            <param name="assertion">if set to <c>true</c> [assertion].</param>
+            <param name="message">The message.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <example>
+            Sample usage:
+            <code><![CDATA[
+            Guard.Against(string.IsNullOrEmpty(name), "Name must have a value");
+            ]]></code></example>
+        </member>
+        <member name="M:ACBr.Net.Core.Exceptions.Guard.Against(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Will throw a <see cref="T:System.InvalidOperationException" /> if the assertion
+            is true, with the specificied message.
+            </summary>
+            <param name="assertion">if set to <c>true</c> [assertion].</param>
+            <param name="message">The message.</param>
+            <param name="args">Parametros da mensagem</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <example>
+            Sample usage:
+            <code><![CDATA[
+            Guard.Against(string.IsNullOrEmpty(name), "Name must have a value");
+            ]]></code></example>
+        </member>
+        <member name="M:ACBr.Net.Core.Exceptions.Guard.Against``1(System.Boolean,System.String,System.Action{``0})">
+            <summary>
+            Will throw exception of type <typeparamref name="TException" />
+            with the specified message if the assertion is true
+            </summary>
+            <typeparam name="TException">The type of the t exception.</typeparam>
+            <param name="assertion">if set to <c>true</c> [assertion].</param>
+            <param name="message">The message.</param>
+            <param name="beforeThowAction">The action.</param>
+            <example>
+            Sample usage:
+            <code><![CDATA[
+            Guard.Against<ArgumentException>(string.IsNullOrEmpty(name), "Name must have a value", (ex) => Logger.Erro("Name must have a value"));
+            ]]></code></example>
+        </member>
+        <member name="M:ACBr.Net.Core.Exceptions.Guard.Against``1(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Will throw exception of type <typeparamref name="TException" />
+            with the specified message if the assertion is true
+            </summary>
+            <typeparam name="TException">The type of the t exception.</typeparam>
+            <param name="assertion">if set to <c>true</c> [assertion].</param>
+            <param name="message">The message.</param>
+            <param name="args">The arguments.</param>
+            <example>
+            Sample usage:
+            <code><![CDATA[
+            Guard.Against<ArgumentException>(string.IsNullOrEmpty(name), "{0} must have a value", Object);
+            ]]></code></example>
+        </member>
+        <member name="T:ACBr.Net.Core.Generics.GenericClone`1">
+            <summary>
+            Classe GenericClone implementação generica da interface ICloneable.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericClone`1.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>T.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericClone`1.System#ICloneable#Clone">
+            <inheritdoc />
+        </member>
+        <member name="F:ACBr.Net.Core.Generics.GenericCollection`1.List">
+            <summary>
+            The list
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericCollection`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.Generics.GenericCollection`1" /> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.Generics.GenericCollection`1.Count">
+            <summary>
+            Gets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericCollection`1.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericCollection`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericCollection`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericEditable`1.BeginEdit">
+            <summary>
+            Begins an edit on an object.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericEditable`1.CancelEdit">
+            <summary>
+            Discards changes since the last <see cref="M:System.ComponentModel.IEditableObject.BeginEdit" /> call.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.GenericEditable`1.EndEdit">
+            <summary>
+            Pushes changes since the last <see cref="M:System.ComponentModel.IEditableObject.BeginEdit" /> or <see cref="M:System.ComponentModel.IBindingList.AddNew" /> call into the underlying object.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.Core.Generics.OperationResult`1">
+            <summary>
+            Class OperationResult.
+            </summary>
+            <typeparam name="TResult">The type of the t result.</typeparam>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.OperationResult`1.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:ACBr.Net.Core.Generics.OperationResult`1"/> class from being created.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.Generics.OperationResult`1.Success">
+            <summary>
+            Gets a value indicating whether this <see cref="T:ACBr.Net.Core.Generics.OperationResult`1"/> is success.
+            </summary>
+            <value><c>true</c> if success; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Generics.OperationResult`1.Result">
+            <summary>
+            Gets the result.
+            </summary>
+            <value>The result.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Generics.OperationResult`1.FailureMessage">
+            <summary>
+            Gets the non success message.
+            </summary>
+            <value>The non success message.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Generics.OperationResult`1.Exception">
+            <summary>
+            Gets the exception.
+            </summary>
+            <value>The exception.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.OperationResult`1.CreateSuccessResult(`0)">
+            <summary>
+            Creates the success result.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>OperationResult&lt;TResult&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.OperationResult`1.CreateFailure(System.String)">
+            <summary>
+            Creates the failure.
+            </summary>
+            <param name="failureMessage">The non success message.</param>
+            <returns>OperationResult&lt;TResult&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Generics.OperationResult`1.CreateFailure(System.Exception,System.String)">
+            <summary>
+            Creates the failure.
+            </summary>
+            <param name="ex">The ex.</param>
+            <param name="failureMessage"></param>
+            <returns>OperationResult&lt;TResult&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrIniFile.Contains(System.String)">
+            <summary>
+            Retorna true se a seção existir no ini.
+            </summary>
+            <param name="section"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrIniFile.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrIniFile.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.FuncLoggerFactory">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.FuncLoggerFactory.#ctor(System.Func{System.Type,ACBr.Net.Core.Logging.IACBrLogger},System.Func{System.String,ACBr.Net.Core.Logging.IACBrLogger})">
+             <summary>
+            
+             </summary>
+             <param name="getLoggerType"></param>
+             <param name="getLoggerKey"></param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.FuncLoggerFactory.#ctor(System.Func{System.String,ACBr.Net.Core.Logging.IACBrLogger})">
+             <summary>
+            
+             </summary>
+             <param name="getLogger"></param>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.IACBrLogger">
+            <summary>
+            Interface IACBrLogger
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.IACBrLogger.IsErrorEnabled">
+            <summary>
+            Gets a value indicating whether this instance is error enabled.
+            </summary>
+            <value><c>true</c> if this instance is error enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.IACBrLogger.IsFatalEnabled">
+            <summary>
+            Gets a value indicating whether this instance is fatal enabled.
+            </summary>
+            <value><c>true</c> if this instance is fatal enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.IACBrLogger.IsDebugEnabled">
+            <summary>
+            Gets a value indicating whether this instance is debug enabled.
+            </summary>
+            <value><c>true</c> if this instance is debug enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.IACBrLogger.IsInfoEnabled">
+            <summary>
+            Gets a value indicating whether this instance is information enabled.
+            </summary>
+            <value><c>true</c> if this instance is information enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.IACBrLogger.IsWarnEnabled">
+            <summary>
+            Gets a value indicating whether this instance is warn enabled.
+            </summary>
+            <value><c>true</c> if this instance is warn enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Error(System.Object)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Error(System.Object,System.Exception)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.ErrorFormat(System.String,System.Object[])">
+            <summary>
+            Errors the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Fatal(System.Object)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Fatal(System.Object,System.Exception)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Debug(System.Object)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Debug(System.Object,System.Exception)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.DebugFormat(System.String,System.Object[])">
+            <summary>
+            Debugs the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Info(System.Object)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Info(System.Object,System.Exception)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.InfoFormat(System.String,System.Object[])">
+            <summary>
+            Informations the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Warn(System.Object)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.Warn(System.Object,System.Exception)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.IACBrLogger.WarnFormat(System.String,System.Object[])">
+            <summary>
+            Warns the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.ILoggerExtensions.Log``1(``0)">
+            <summary>
+            Call this method to write log entries on behalf of the current
+            class.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.ILoggerFactory">
+            <summary>
+            Interface ILoggerFactory
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.ILoggerFactory.LoggerFor(System.String)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.ILoggerFactory.LoggerFor(System.Type)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.Log4NetLogger">
+            <summary>
+            Classe Log4NetLogger.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.LogType">
+            <summary>
+            The i log type
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.IsErrorEnabledDelegate">
+            <summary>
+            The is error enabled delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.IsFatalEnabledDelegate">
+            <summary>
+            The is fatal enabled delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.IsDebugEnabledDelegate">
+            <summary>
+            The is debug enabled delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.IsInfoEnabledDelegate">
+            <summary>
+            The is information enabled delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.IsWarnEnabledDelegate">
+            <summary>
+            The is warn enabled delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.ErrorDelegate">
+            <summary>
+            The error delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.ErrorExceptionDelegate">
+            <summary>
+            The error exception delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.ErrorFormatDelegate">
+            <summary>
+            The error format delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.FatalDelegate">
+            <summary>
+            The fatal delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.FatalExceptionDelegate">
+            <summary>
+            The fatal exception delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.DebugDelegate">
+            <summary>
+            The debug delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.DebugExceptionDelegate">
+            <summary>
+            The debug exception delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.DebugFormatDelegate">
+            <summary>
+            The debug format delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.InfoDelegate">
+            <summary>
+            The information delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.InfoExceptionDelegate">
+            <summary>
+            The information exception delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.InfoFormatDelegate">
+            <summary>
+            The information format delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.WarnDelegate">
+            <summary>
+            The warn delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.WarnExceptionDelegate">
+            <summary>
+            The warn exception delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.WarnFormatDelegate">
+            <summary>
+            The warn format delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLogger.Logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ACBr.Net.Core.Logging.Log4NetLogger"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.GetPropertyGetter(System.String)">
+            <summary>
+            Gets the property getter.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>Func&lt;System.Object, System.Boolean&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.GetMethodCallForMessage(System.String)">
+            <summary>
+            Gets the method call for message.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <returns>Action&lt;System.Object, System.Object&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.GetMethodCallForMessageException(System.String)">
+            <summary>
+            Gets the method call for message exception.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <returns>Action&lt;System.Object, System.Object, Exception&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.GetMethodCallForMessageFormat(System.String)">
+            <summary>
+            Gets the method call for message format.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <returns>Action&lt;System.Object, System.String, System.Object[]&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.Logging.Log4NetLogger"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.Log4NetLogger.IsErrorEnabled">
+            <summary>
+            Gets a value indicating whether this instance is error enabled.
+            </summary>
+            <value><c>true</c> if this instance is error enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.Log4NetLogger.IsFatalEnabled">
+            <summary>
+            Gets a value indicating whether this instance is fatal enabled.
+            </summary>
+            <value><c>true</c> if this instance is fatal enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.Log4NetLogger.IsDebugEnabled">
+            <summary>
+            Gets a value indicating whether this instance is debug enabled.
+            </summary>
+            <value><c>true</c> if this instance is debug enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.Log4NetLogger.IsInfoEnabled">
+            <summary>
+            Gets a value indicating whether this instance is information enabled.
+            </summary>
+            <value><c>true</c> if this instance is information enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.Log4NetLogger.IsWarnEnabled">
+            <summary>
+            Gets a value indicating whether this instance is warn enabled.
+            </summary>
+            <value><c>true</c> if this instance is warn enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Error(System.Object)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Error(System.Object,System.Exception)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.ErrorFormat(System.String,System.Object[])">
+            <summary>
+            Errors the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Fatal(System.Object)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Fatal(System.Object,System.Exception)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Debug(System.Object)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Debug(System.Object,System.Exception)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.DebugFormat(System.String,System.Object[])">
+            <summary>
+            Debugs the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Info(System.Object)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Info(System.Object,System.Exception)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.InfoFormat(System.String,System.Object[])">
+            <summary>
+            Informations the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Warn(System.Object)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.Warn(System.Object,System.Exception)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLogger.WarnFormat(System.String,System.Object[])">
+            <summary>
+            Warns the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.Log4NetLoggerFactory">
+            <summary>
+            Classe Log4NetLoggerFactory.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLoggerFactory.LogManagerType">
+            <summary>
+            The log manager type
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLoggerFactory.GetLoggerByNameDelegate">
+            <summary>
+            The get logger by name delegate
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.Log4NetLoggerFactory.GetLoggerByTypeDelegate">
+            <summary>
+            The get logger by type delegate
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLoggerFactory.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ACBr.Net.Core.Logging.Log4NetLoggerFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLoggerFactory.LoggerFor(System.String)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLoggerFactory.LoggerFor(System.Type)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.Log4NetLoggerFactory.GetGetLoggerMethodCall``1">
+            <summary>
+            Gets the get logger method call.
+            </summary>
+            <typeparam name="TParameter">The type of the t parameter.</typeparam>
+            <returns>Func&lt;TParameter, System.Object&gt;.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.LoggerProvider">
+            <summary>
+            Classe LoggerProvider.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.LoggerProvider.LoggerConfKey">
+            <summary>
+            The logger conf key
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.LoggerProvider.loggerFactory">
+            <summary>
+            The logger factory
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ACBr.Net.Core.Logging.LoggerProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.GetLoggerFactory(System.String)">
+            <summary>
+            Gets the logger factory.
+            </summary>
+            <param name="loggerClass">The logger class.</param>
+            <returns>ILoggerFactory.</returns>
+            <exception cref="T:System.ApplicationException">
+            Public constructor was not found for  + loggerFactoryType
+            or
+            or
+            Unable to instantiate:  + loggerFactoryType
+            </exception>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.GetLoggerClass">
+            <summary>
+            Gets the logger class.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.SetLoggerFactory(ACBr.Net.Core.Logging.ILoggerFactory)">
+            <summary>
+            Sets the logger factory.
+            </summary>
+            <param name="factory">The factory.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.SetLoggerFactory``1">
+            <summary>
+            Sets the logger factory.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.LoggerFor(System.String)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.LoggerFor(System.Type)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.LoggerProvider.LoggerFor``1">
+            <summary>
+            Loggers for.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.NLogLogger">
+            <summary>
+            Classe NLogLogger.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.LoggerType">
+            <summary>
+            The logger type
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.DebugPropertyGetter">
+            <summary>
+            The debug property getter
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.ErrorPropertyGetter">
+            <summary>
+            The error property getter
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.FatalPropertyGetter">
+            <summary>
+            The fatal property getter
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.InfoPropertyGetter">
+            <summary>
+            The information property getter
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.WarnPropertyGetter">
+            <summary>
+            The warn property getter
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.DebugAction">
+            <summary>
+            The debug action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.ErrorAction">
+            <summary>
+            The error action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.WarnAction">
+            <summary>
+            The warn action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.InfoAction">
+            <summary>
+            The information action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.FatalAction">
+            <summary>
+            The fatal action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.DebugExceptionAction">
+            <summary>
+            The debug exception action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.ErrorExceptionAction">
+            <summary>
+            The error exception action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.WarnExceptionAction">
+            <summary>
+            The warn exception action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.InfoExceptionAction">
+            <summary>
+            The information exception action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.FatalExceptionAction">
+            <summary>
+            The fatal exception action
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLogger.Log">
+            <summary>
+            The log
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ACBr.Net.Core.Logging.NLogLogger"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.Logging.NLogLogger"/> class.
+            </summary>
+            <param name="log">The log.</param>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NLogLogger.IsDebugEnabled">
+            <summary>
+            Gets a value indicating whether this instance is debug enabled.
+            </summary>
+            <value><c>true</c> if this instance is debug enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NLogLogger.IsErrorEnabled">
+            <summary>
+            Gets a value indicating whether this instance is error enabled.
+            </summary>
+            <value><c>true</c> if this instance is error enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NLogLogger.IsFatalEnabled">
+            <summary>
+            Gets a value indicating whether this instance is fatal enabled.
+            </summary>
+            <value><c>true</c> if this instance is fatal enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NLogLogger.IsInfoEnabled">
+            <summary>
+            Gets a value indicating whether this instance is information enabled.
+            </summary>
+            <value><c>true</c> if this instance is information enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NLogLogger.IsWarnEnabled">
+            <summary>
+            Gets a value indicating whether this instance is warn enabled.
+            </summary>
+            <value><c>true</c> if this instance is warn enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Debug(System.Object,System.Exception)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Debug(System.Object)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.DebugFormat(System.String,System.Object[])">
+            <summary>
+            Debugs the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Error(System.Object,System.Exception)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Error(System.Object)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.ErrorFormat(System.String,System.Object[])">
+            <summary>
+            Errors the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Fatal(System.Object,System.Exception)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Fatal(System.Object)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Info(System.Object,System.Exception)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Info(System.Object)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.InfoFormat(System.String,System.Object[])">
+            <summary>
+            Informations the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Warn(System.Object,System.Exception)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.Warn(System.Object)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.WarnFormat(System.String,System.Object[])">
+            <summary>
+            Warns the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.CreatePropertyGetter(System.String)">
+            <summary>
+            Creates the property getter.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>Func&lt;System.Object, System.Boolean&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.CreateSimpleAction(System.String)">
+            <summary>
+            Creates the simple action.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <returns>Action&lt;System.Object, System.String&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.CreateExceptionAction(System.String)">
+            <summary>
+            Creates the exception action.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <returns>Action&lt;System.Object, System.String, Exception&gt;.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLogger.GetMethodInfo(System.String,System.Type[])">
+            <summary>
+            Gets the method information.
+            </summary>
+            <param name="methodName">Name of the method.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>MethodInfo.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.NLogLoggerFactory">
+            <summary>
+            Classe NLogLoggerFactory.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLoggerFactory.logManagerType">
+            <summary>
+            The log manager type
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NLogLoggerFactory.createLoggerInstanceFunc">
+            <summary>
+            The create logger instance function
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLoggerFactory.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ACBr.Net.Core.Logging.NLogLoggerFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLoggerFactory.LoggerFor(System.Type)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLoggerFactory.LoggerFor(System.String)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NLogLoggerFactory.CreateLoggerInstance">
+            <summary>
+            Creates the logger instance.
+            </summary>
+            <returns>Func&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.NoLoggingLogger">
+            <summary>
+            Classe NoLoggingLogger.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NoLoggingLogger.IsErrorEnabled">
+            <summary>
+            Gets a value indicating whether this instance is error enabled.
+            </summary>
+            <value><c>true</c> if this instance is error enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NoLoggingLogger.IsFatalEnabled">
+            <summary>
+            Gets a value indicating whether this instance is fatal enabled.
+            </summary>
+            <value><c>true</c> if this instance is fatal enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NoLoggingLogger.IsDebugEnabled">
+            <summary>
+            Gets a value indicating whether this instance is debug enabled.
+            </summary>
+            <value><c>true</c> if this instance is debug enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NoLoggingLogger.IsInfoEnabled">
+            <summary>
+            Gets a value indicating whether this instance is information enabled.
+            </summary>
+            <value><c>true</c> if this instance is information enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.Core.Logging.NoLoggingLogger.IsWarnEnabled">
+            <summary>
+            Gets a value indicating whether this instance is warn enabled.
+            </summary>
+            <value><c>true</c> if this instance is warn enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Error(System.Object)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Error(System.Object,System.Exception)">
+            <summary>
+            Errors the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.ErrorFormat(System.String,System.Object[])">
+            <summary>
+            Errors the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Fatal(System.Object)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Fatal(System.Object,System.Exception)">
+            <summary>
+            Fatals the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Debug(System.Object)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Debug(System.Object,System.Exception)">
+            <summary>
+            Debugs the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.DebugFormat(System.String,System.Object[])">
+            <summary>
+            Debugs the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Info(System.Object)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Info(System.Object,System.Exception)">
+            <summary>
+            Informations the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.InfoFormat(System.String,System.Object[])">
+            <summary>
+            Informations the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Warn(System.Object)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.Warn(System.Object,System.Exception)">
+            <summary>
+            Warns the specified message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLogger.WarnFormat(System.String,System.Object[])">
+            <summary>
+            Warns the format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="T:ACBr.Net.Core.Logging.NoLoggingLoggerFactory">
+            <summary>
+            Classe NoLoggingLoggerFactory.
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.Core.Logging.NoLoggingLoggerFactory.Nologging">
+            <summary>
+            The nologging
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLoggerFactory.LoggerFor(System.String)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.Logging.NoLoggingLoggerFactory.LoggerFor(System.Type)">
+            <summary>
+            Loggers for.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>IACBrLogger.</returns>
+        </member>
+        <member name="T:ACBr.Net.Core.InteropServices.ACBrSafeHandle">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:ACBr.Net.Core.InteropServices.ACBrSafeHandle.MinusOne">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.InteropServices.ACBrSafeHandle.IsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.ReleaseHandle">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.AddMethod``1(System.String)">
+            <summary>
+            Adiciona um delegate a lista para a função informada.
+            </summary>
+            <param name="functionName">Nome da função para exportar</param>
+            <typeparam name="T">Delegate da função</typeparam>
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.GetMethod``1">
+            <summary>
+            Retorna o delegate para uso.
+             </summary>
+            <typeparam name="T">Delegate</typeparam>
+            <returns></returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.ExecuteMethod``1(System.Func{``0})">
+            <summary>
+            Executa a função e trata erros nativos.
+            </summary>
+            <param name="method"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+            <exception cref="T:ACBr.Net.Core.ACBrException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.CreateException(System.String)">
+            <summary>
+            Cria e dispara uma <see cref="T:ACBr.Net.Core.ACBrException"/> com a mensagem informada.
+            </summary>
+            <param name="errorMessage">Mensagem de erro.</param>
+            <returns><see cref="T:ACBr.Net.Core.ACBrException"/></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrSafeHandle.ProcessException(System.Exception)">
+            <summary>
+            Tatar uma <see cref="T:System.Exception"/> e dispara uma <see cref="T:ACBr.Net.Core.ACBrException"/> com a mensagem da mesma.
+            </summary>
+            <param name="exception">Exception</param>
+            <returns><see cref="T:ACBr.Net.Core.ACBrException"/></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrLPStr.MarshalNativeToManaged(System.IntPtr)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrLPStr.CleanUpNativeData(System.IntPtr)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrLPStr.MarshalManagedToNative(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrLPStr.CleanUpManagedData(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.InteropServices.ACBrLPStr.GetNativeDataSize">
+            <inheritdoc />
+        </member>
+        <member name="T:ACBr.Net.Core.StaticRandom">
+            <summary>
+            Thread-safe equivalent of System.Random, using just static methods.
+            If all you want is a source of random numbers, this is an easy class to
+            use. If you need to specify your own seeds (eg for reproducible sequences
+            of numbers), use System.Random.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.StaticRandom.Next">
+            <summary>
+            Returns a nonnegative random number.
+            </summary>
+            <returns>A 32-bit signed integer greater than or equal to zero and less than Int32.MaxValue.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.StaticRandom.Next(System.Int32)">
+            <summary>
+            Returns a nonnegative random number less than the specified maximum.
+            </summary>
+            <param name="max">The maximum.</param>
+            <returns>A 32-bit signed integer greater than or equal to zero, and less than maxValue;
+            that is, the range of return values includes zero but not maxValue.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">maxValue is less than zero.</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.StaticRandom.Next(System.Int32,System.Int32)">
+            <summary>
+            Returns a random number within a specified range.
+            </summary>
+            <param name="min">The inclusive lower bound of the random number returned.</param>
+            <param name="max">The exclusive upper bound of the random number returned.
+            maxValue must be greater than or equal to minValue.</param>
+            <returns>A 32-bit signed integer greater than or equal to minValue and less than maxValue;
+            that is, the range of return values includes minValue but not maxValue.
+            If minValue equals maxValue, minValue is returned.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">minValue is greater than maxValue.</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.StaticRandom.NextDouble">
+            <summary>
+            Returns a random number between 0.0 and 1.0.
+            </summary>
+            <returns>A double-precision floating point number greater than or equal to 0.0, and less than 1.0.</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.StaticRandom.NextBytes(System.Byte[])">
+            <summary>
+            Fills the elements of a specified array of bytes with random numbers.
+            </summary>
+            <param name="buffer">An array of bytes to contain random numbers.</param>
+            <exception cref="T:System.ArgumentNullException">buffer is a null reference (Nothing in Visual Basic).</exception>
+        </member>
+        <member name="T:ACBr.Net.Core.ACBrTxtWriter">
+            <summary>
+            Classe para auxiliar na geração de arquivos Txt.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.#ctor(System.String)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.ACBrTxtWriter" />.
+            </summary>
+            <param name="file">O arquivo que sera salvo/editado</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.#ctor(System.String,System.Boolean)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.ACBrTxtWriter" />.
+            </summary>
+            <param name="file">O arquivo que sera salvo/editado</param>
+            <param name="append">Adiciona texto no final</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.ACBrTxtWriter" />.
+            </summary>
+            <param name="file">O arquivo que sera salvo/editado</param>
+            <param name="encoding">Encoding</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.#ctor(System.String,System.Text.Encoding,System.Int32)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.ACBrTxtWriter" />.
+            </summary>
+            <param name="file">O arquivo que sera salvo/editado</param>
+            <param name="encoding">Encoding</param>
+            <param name="bufferSize">Tamanho do buffer</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.#ctor(System.String,System.Boolean,System.Text.Encoding,System.Int32)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.ACBrTxtWriter" />.
+            </summary>
+            <param name="file">O arquivo que sera salvo/editado</param>
+            <param name="append">Adiciona texto no final</param>
+            <param name="encoding">Encoding</param>
+            <param name="bufferSize">Tamanho do buffer</param>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.Finalize">
+            <inheritdoc />
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrTxtWriter.LineCount">
+            <summary>
+            Retorna a quantidade de linhas adicionadas no arquivo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrTxtWriter.Encoding">
+            <summary>
+            Retorna o o enconde usado no arquivo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.ACBrTxtWriter.AutoFLush">
+            <summary>
+            Retorna/define se o flush vai ser realizado de forma automática.
+            Não utiliza o buffer.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.WriteLine(System.String)">
+            <summary>Writes a string followed by a line terminator to the text string or stream.</summary>
+            <param name="value">The string to write. If <paramref name="value" /> is null, only the line terminator is written. </param>
+            <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed. </exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.WriteLine(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>Writes a string followed by a line terminator to the text string or stream.</summary>
+            <param name="values">The string to write. If <paramref name="values" /> is null, only the line terminator is written. </param>
+            <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed. </exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.Close">
+            <summary>Closes the current StreamWriter object and the underlying stream.</summary>
+            <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.Flush">
+            <summary>Clears all buffers for the current writer and causes any buffered data to be written to the underlying stream.</summary>
+            <exception cref="T:System.ObjectDisposedException">The current writer is closed. </exception>
+            <exception cref="T:System.IO.IOException">An I/O error has occurred. </exception>
+            <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair. </exception>
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.ACBrTxtWriter.Dispose(System.Boolean)">
+            <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+            <param name="disposing"></param>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtEnumAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.Core.TxtEnumAttribute"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtEnumAttribute.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:ACBr.Net.Core.TxtFieldAttribute">
+            <summary>
+            Atributo usado para o gerador de arquivo Txt.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtFieldAttribute.#ctor(ACBr.Net.Core.TxtInfo)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.TxtFieldAttribute" />.
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtFieldAttribute.#ctor(System.String,ACBr.Net.Core.TxtInfo)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.TxtFieldAttribute" />.
+            </summary>
+            <param name="nome"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtFieldAttribute.#ctor(ACBr.Net.Core.TxtInfo,System.Boolean)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.TxtFieldAttribute" />.
+            </summary>
+            <param name="tipo"></param>
+            <param name="obrigatorio"></param>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtFieldAttribute.#ctor(System.String,ACBr.Net.Core.TxtInfo,System.Boolean)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.Core.TxtFieldAttribute" />.
+            </summary>
+            <param name="nome"></param>
+            <param name="type"></param>
+            <param name="obrigatorio"></param>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Nome">
+            <summary>
+            Define/retorna o nome do campo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Tipo">
+            <summary>
+            Define/retorna o tipo de dado para processamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Ordem">
+            <summary>
+            Define/retorna a ordem de inserção do dado.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Minimo">
+            <summary>
+            Define/retorna o tamanho mínimo do campo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Maximo">
+            <summary>
+            Define/retorna o tamanho máximo do campo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Obrigatorio">
+            <summary>
+            Define/retorna se o campo é obrigatório.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.Preenchimento">
+            <summary>
+            Define/retorna a partir da da onde sera feito o preenchimento em caso do valor sem menor que o mínimo.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.CaracterPreenchimento">
+            <summary>
+            Define/retorna o caractere para ser usado no preenchimento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.QtdDecimais">
+            <summary>
+            Define/retorna a quantidade de digitos decimais em caso de valor numérico.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.Core.TxtFieldAttribute.SeparadorDecimal">
+            <summary>
+            Define/retorna o separador decimal utilizado em caso de valor numérico com decimais
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.Core.TxtRecord`1">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecord`1.ObterValor(System.Object,ACBr.Net.Core.TxtFieldAttribute)">
+            <inheritdoc />
+        </member>
+        <member name="T:ACBr.Net.Core.TxtRecordBase`2">
+            <summary>
+            Classe base para gerador de arquivo Txt
+            </summary>
+            <typeparam name="TClass">Classe do arquivo</typeparam>
+            <typeparam name="TAttribute">Atributo Txt</typeparam>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.Check(System.Func{System.Boolean},System.String)">
+            <summary>
+            Função para validação, se o valor do checkAction for false lança um exception
+            </summary>
+            <param name="checkAction">Função para checagem</param>
+            <param name="mensagemErro">Mensagem de erro</param>
+            <exception cref="T:ACBr.Net.Core.ACBrException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.Check(System.Boolean,System.String)">
+            <summary>
+            Lança um exceção se o valor do check for false;
+            </summary>
+            <param name="check"></param>
+            <param name="mensagemErro">Mensagem de erro</param>
+            <exception cref="T:ACBr.Net.Core.ACBrException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.AdjustString(System.String,System.Int32,System.Int32,ACBr.Net.Core.TxtFill,System.Char)">
+            <summary>
+            Função para ajustar a string de acordo com os parametros informados
+            </summary>
+            <param name="value">String de origem</param>
+            <param name="minimo">Tamanho minimo da string</param>
+            <param name="maximo">Tamanho maximo da string</param>
+            <param name="direction">Lado onde sera inserido o caracter</param>
+            <param name="fillChar">Caractere de preenchimento</param>
+            <returns>String ajustada</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.GetProperties">
+            <summary>
+            Retorna todas as propriedades que tenha o atributo txt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.GerarLinha(ACBr.Net.Core.ACBrTxtWriter)">
+            <summary>
+            Função para gerar a linha txt correspondente a esta classe
+            </summary>
+            <param name="writer"></param>
+            <returns>A quantidade de linha inseridas no stream</returns>
+        </member>
+        <member name="M:ACBr.Net.Core.TxtRecordBase`2.ObterValor(System.Object,`1)">
+            <summary>
+            Função que retorno o valor do item já ajustado de acordo com o atributo txt
+            </summary>
+            <param name="value">Valor do objeto</param>
+            <param name="field">Atributo txt</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

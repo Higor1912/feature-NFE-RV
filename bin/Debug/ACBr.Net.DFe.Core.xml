@@ -1,0 +1,2267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACBr.Net.DFe.Core</name>
+    </assembly>
+    <members>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeReportClass`1.ParentChanged(`0,`0)">
+            <summary>
+            Função executada toda vez que é mudado o Parent.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.ChaveDFe">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.ChaveDFe.Gerar(ACBr.Net.DFe.Core.Common.DFeCodUF,System.DateTime,System.String,System.Int32,System.Int32,System.Int64,ACBr.Net.DFe.Core.Common.DFeTipoEmissao,System.Int32)">
+            <summary>
+            Gera a chave do documento fiscal
+            </summary>
+            <param name="ufEmitente">UF do emitente do DF-e</param>
+            <param name="dataEmissao">Data de emissão do DF-e</param>
+            <param name="cnpjEmitente">CNPJ do emitente do DF-e</param>
+            <param name="modelo">Modelo do DF-e</param>
+            <param name="serie">Série do DF-e</param>
+            <param name="numero">Numero do DF-e</param>
+            <param name="tipoEmissao">Tipo de emissão do DF-e. Informar inteiro conforme consta no manual de orientação do contribuinte para o DF-e</param>
+            <param name="cNumerico">Código numérico que compõe a Chave de Acesso. Número gerado pelo emitente para cada DF-e</param>
+            <returns>Retorna a chave DFe</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.ChaveDFe.Validar(System.String)">
+            <summary>
+            Informa se a chave de um DF-e é válida
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.ChaveDFe.Formatar(System.String)">
+            <summary>
+            Formata a chave do documento fiscal.
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeConfigBase`7.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeConfigBase`7"/>.
+            </summary>
+            <param name="parent"></param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeConfigBase`7"/>.
+            </summary>
+            <param name="parent"></param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.Parent">
+            <summary>
+            Componente DFe parente desta configuração.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.Geral">
+            <summary>
+            Configurações principais do componente.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.WebServices">
+            <summary>
+            Configurações de webservices do componente.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.Certificados">
+            <summary>
+            Configurações de certificado do componente.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeConfigBase`5.Arquivos">
+            <summary>
+            Configurações de arquivos do componente.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`2.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`2"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`2.SchemasCache">
+            <summary>
+            Retorna um dicionario que contem o cache dos paths de cada schema lido.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`2.GetSchema(`1)">
+            <summary>
+            Metodo que retorna o caminho para o tipo de schema solicitado.
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`2"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.Parent">
+            <summary>
+            Componente DFe parente desta configuração.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.PathSalvar">
+            <summary>
+            Define/retorna o caminho onde deve ser salvo os arquivos.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.PathSchemas">
+            <summary>
+            Define/retorna o caminho onde estão so schemas.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.ArquivoServicos">
+            <summary>
+            Define/retorna o arquivo com os dados dos serviços.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.Salvar">
+            <summary>
+            Define/retorna se deve salvar os arquivos xml, trata-se de arquivos com validade jurídica.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.AdicionarLiteral">
+            <summary>
+            Define/retorna se deve ser adicionado um literal ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.SepararPorCNPJ">
+            <summary>
+            Define/retorna se deve ser adicionado o CNPJ ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.SepararPorModelo">
+            <summary>
+            Define/retorna se deve ser adicionado o numero do
+            modelo do arquivo DFe ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.SepararPorAno">
+            <summary>
+            Define/retorna se deve ser adicionado o ano ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.SepararPorMes">
+            <summary>
+            Define/retorna se deve ser adicionado o mês ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.SepararPorDia">
+            <summary>
+            Define/retorna se deve ser adicionado o dia ao caminho de salvamento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.OrdenacaoPath">
+            <summary>
+            Retorna a ordem de criação dos caminhos para salvamento dos arquivos.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.ArquivoServicoChange">
+            <summary>
+            Metodo chamado quando muda o caminho do arquivo de serviços.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeArquivosConfigBase`1.GetPath(System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)">
+            <summary>
+            Gera um path de salvamento.
+            </summary>
+            <param name="aPath"></param>
+            <param name="aLiteral"></param>
+            <param name="cnpj"></param>
+            <param name="data"></param>
+            <param name="modeloDescr"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1">
+            <summary>
+            Class NFECFGCertificados. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe  <see cref="T:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.Parent">
+            <summary>
+            Componente DFe parente desta configuração.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.Certificado">
+            <summary>
+            Define/retorna o certificado ou Numero de Serie.
+            </summary>
+            <value>O Certificado/Numero de Serie.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.CertificadoBytes">
+            <summary>
+            Define/retorna o certificado em bytes.
+            </summary>
+            <value>O Certificado.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.Senha">
+            <summary>
+            Define/retorna a senha do certificado.
+            </summary>
+            <value>A senha.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.DataVenc">
+            <summary>
+            Retorna a data de vencimento do certificado.
+            </summary>
+            <value>A data de vencimento.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.Nome">
+            <summary>
+            Define/retorna o nome do responsável pelo certificado.
+            </summary>
+            <value>The name of the subject.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.CNPJ">
+            <summary>
+            Gets or sets the CNPJ.
+            </summary>
+            <value>The CNPJ.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.SelecionarCertificado">
+            <summary>
+            Seleciona um certificado digital instalado na maquina retornando o numero de serie do mesmo.
+            </summary>
+            <returns>Numero de Serie.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.ObterCertificado">
+            <summary>
+            retorna o certificado digital de acordo com os dados informados.
+            </summary>
+            <returns>X509Certificate2.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeCertificadosConfigBase`1.GetCertificado">
+            <summary>
+            Gets the certificado.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.DFeCodUF">
+            <summary>
+            Estados brasileiros por código
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.AC">
+            <summary>
+            12 - Acre
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.AL">
+            <summary>
+            27 - Alagoas
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.AM">
+            <summary>
+            13 - Amazonas
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.AP">
+            <summary>
+            16 - Amapá
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.BA">
+            <summary>
+            29 - Bahia
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.CE">
+            <summary>
+            23 - Ceará
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.DF">
+            <summary>
+            53 - Distrito Federal
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.ES">
+            <summary>
+            32 - Espírito Santo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.GO">
+            <summary>
+            53 - Goiás
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.MA">
+            <summary>
+            21 - Maranhão
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.MG">
+            <summary>
+            31 - Minas Gerais
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.MS">
+            <summary>
+            50 - Mato Grosso do Sul
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.MT">
+            <summary>
+            51 - Mato Grosso
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.PA">
+            <summary>
+            15 - Pará
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.PB">
+            <summary>
+            25 - Paraíba
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.PE">
+            <summary>
+            26 - Pernambuco
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.PI">
+            <summary>
+            22 - Piauí
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.PR">
+            <summary>
+            41 - Paraná
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.RJ">
+            <summary>
+            33 - Rio de Janeiro
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.RN">
+            <summary>
+            24 - Rio Grande do Norte
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.RO">
+            <summary>
+            11 - Rondônia
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.RR">
+            <summary>
+            14 - Roraima
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.RS">
+            <summary>
+            43 - Rio Grande do Sul
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.SC">
+            <summary>
+            42 - Santa Catarina
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.SE">
+            <summary>
+            28 - Sergipe
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.SP">
+            <summary>
+            35 - São Paulo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.TO">
+            <summary>
+            17 - Tocantins
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.AN">
+            <summary>
+            91 - Ambiente Nacional
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.EX">
+            <summary>
+            00 - Exterior
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeCodUF.SU">
+            <summary>
+            99 - Suframa
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2.VersaoDFe">
+            <summary>
+            Define/retorna a versão do documento DFe.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2.FormaEmissao">
+            <summary>
+            Define/retorna o tipo de emissão.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`2"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.Parent">
+            <summary>
+            Componente DFe parente desta configuração.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.Salvar">
+            <summary>
+            Define/retorna se deve ser salvo os arquivos gerais, ou seja, arquivos de envio e
+            de retorno sem validade jurídica.
+            </summary>
+            <value><c>true</c> para salvar; caso contrário, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.ExibirErroSchema">
+            <summary>
+            Define/retorna se deve exibir os erros de validação do Schema na Execption.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.FormatoAlerta">
+            <summary>
+            Define/retorna o formato do alerta do serializer.
+            Valor Padrão = TAG:%TAG% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.RetirarAcentos">
+            <summary>
+            Define/retorna se deve retirar acentos do xml antes de enviar.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.RetirarEspacos">
+            <summary>
+            Define/retorna se deve ser retirado os espaços na hora de gerar o xml.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.IdentarXml">
+            <summary>
+            Define/retorna se deve identar o xml na hora de gerar.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeGeralConfigBase`1.ValidarDigest">
+            <summary>
+            Define/retorna se deve ser validado o digest.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.DFeSiglaUF">
+            <summary>
+            Estados brasileiros por sigla
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.AC">
+            <summary>
+            AC- ACre
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.AL">
+            <summary>
+            AL - Alagoas
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.AM">
+            <summary>
+            AM - Amazonas
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.AP">
+            <summary>
+            AP - Amapá
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.BA">
+            <summary>
+            BA - Bahia
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.CE">
+            <summary>
+            CE - Ceará
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.DF">
+            <summary>
+            DF - Distrito Federal
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.ES">
+            <summary>
+            ES - Espírito Santo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.GO">
+            <summary>
+            GO - Goiás
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.MA">
+            <summary>
+            MA - Maranhão
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.MG">
+            <summary>
+            MG - Minas Gerais
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.MS">
+            <summary>
+            MS - Mato Grosso do Sul
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.MT">
+            <summary>
+            MT - Mato Grosso
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.PA">
+            <summary>
+            PA - Pará
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.PB">
+            <summary>
+            PB - Paraíba
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.PE">
+            <summary>
+            PE - Pernambuco
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.PI">
+            <summary>
+            PI - Piauí
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.PR">
+            <summary>
+            PR - Paraná
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.RJ">
+            <summary>
+            RJ - Rio de Janeiro
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.RN">
+            <summary>
+            RN - Rio Grande do Norte
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.RO">
+            <summary>
+            RO - Rondônia
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.RR">
+            <summary>
+            RR - Roraima
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.RS">
+            <summary>
+            RS - Rio Grande do Sul
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.SC">
+            <summary>
+            SC - Santa Catarina
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.SE">
+            <summary>
+            SE - Sergipe
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.SP">
+            <summary>
+            SP - São Paulo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.TO">
+            <summary>
+            TO - Tocantins
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.AN">
+            <summary>
+            AN - Ambiente Nacional
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.EX">
+            <summary>
+            EX - Exterior
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeSiglaUF.SU">
+            <summary>
+            SU - Suframa
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Common.DFeTipoAmbiente">
+            <summary>
+                Identificação do Ambiente
+                <para>1 - Produção</para>
+                <para>2 - Homologação</para>
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeTipoAmbiente.Producao">
+            <summary>
+            Produção
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Common.DFeTipoAmbiente.Homologacao">
+            <summary>
+            Homologação
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.#ctor(`0)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1"/>.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.Parent">
+            <summary>
+            Componente DFe parente desta configuração.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.Salvar">
+            <summary>
+            Define/retorna se deve ou não salvar os arquivos soap.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.Ambiente">
+            <summary>
+            Gets or sets the ambiente.
+            </summary>
+            <value>The ambiente.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.AmbienteCodigo">
+            <summary>
+            Retorna o código do ambiente.
+            </summary>
+            <value>The ambiente codigo.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.Tentativas">
+            <summary>
+            Gets or sets the tentativas.
+            </summary>
+            <value>The tentativas.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.IntervaloTentativas">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.AjustaAguardaConsultaRet">
+            <summary>
+            Gets or sets a value indicating whether [ajusta aguarda consulta ret].
+            </summary>
+            <value><c>true</c> if [ajusta aguarda consulta ret]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Common.DFeWebserviceConfigBase`1.AguardarConsultaRet">
+            <summary>
+            Gets or sets the aguardar consulta ret.
+            </summary>
+            <value>The aguardar consulta ret.</value>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Cryptography.RSAPKCS1SHA256SignatureDescription">
+            <summary>
+                <para>
+                    The RSAPKCS1SHA256SignatureDescription class provides a signature description implementation
+                    for RSA-SHA256 signatures. It allows XML digital signatures to be produced using the
+                    http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 signature type.
+                    RSAPKCS1SHA256SignatureDescription provides the same interface as other signature description
+                    implementations shipped with the .NET Framework, such as
+                    <see cref="T:System.Security.Cryptography.RSAPKCS1SHA1SignatureDescription" />.
+                </para>
+                <para>
+                    RSAPKCS1SHA256SignatureDescription is not generally intended for use on its own, instead it
+                    should be consumed by higher level cryptography services such as the XML digital signature
+                    stack. It can be registered in <see cref="T:System.Security.Cryptography.CryptoConfig" /> so that these services can create
+                    instances of this signature description and use RSA-SHA256 signatures.
+                </para>
+                <para>
+                    Registration in CryptoConfig requires editing the machine.config file found in the .NET
+                    Framework installation's configuration directory (such as
+                    %WINDIR%\Microsoft.NET\Framework\v2.0.50727\Config or
+                    %WINDIR%\Microsoft.NET\Framework64\v2.0.50727\Config) to include registration information on
+                    the type. For example:
+                </para>
+                <example>
+                    <![CDATA[
+                        <configuration>
+                          <mscorlib>
+                            <!-- ... -->
+                            <cryptographySettings>
+                              <cryptoNameMapping>
+                                <cryptoClasses>
+                                  <cryptoClass RSASHA256SignatureDescription="Security.Cryptography.RSAPKCS1SHA256SignatureDescription, Security.Cryptography, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+                                </cryptoClasses>
+                                <nameEntry name="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" class="RSASHA256SignatureDescription" />
+                              </cryptoNameMapping>
+                            </cryptographySettings>
+                          </mscorlib>
+                        </configuration>
+                    ]]>
+                </example>
+                <para>
+                    After adding this registration entry, the assembly which contains the
+                    RSAPKCS1SHA256SignatureDescription (in the example above Security.Cryptography.dll) needs to
+                    be added to the GAC.
+               </para>
+               <para>
+                    Note that on 64 bit machines, both the Framework and Framework64 machine.config files should
+                    be updated, and if the signature description assembly is built bit-specific it needs to be
+                    added to both the 32 and 64 bit GACs.
+                </para>
+                <para>
+                    RSA-SHA256 signatures are first available on the .NET Framework 3.5 SP 1 and as such the
+                    RSAPKCS1SHA256SignatureDescription requires .NET 3.5 SP 1 and Windows Server 2003 or greater
+                    to work properly.
+                </para>
+                <para>
+                    On Windows 2003, the default OID registrations are not setup for the SHA2 family of hash
+                    algorithms, and this can cause the .NET Framework v3.5 SP 1 to be unable to create RSA-SHA2
+                    signatures. To fix this problem, the <see cref="!:Oid2.RegisterSha2OidInformationForRsa" />
+                    method can be called to create the necessary OID registrations.
+                </para>
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Cryptography.RSAPKCS1SHA256SignatureDescription.#ctor">
+            <inheritdoc />
+            <summary>
+                Construct an RSAPKCS1SHA256SignatureDescription object. The default settings for this object
+                are:
+                <list type="bullet">
+                    <item>Digest algorithm - <see cref="T:System.Security.Cryptography.SHA256Managed" /></item>
+                    <item>Key algorithm - <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /></item>
+                    <item>Formatter algorithm - <see cref="T:System.Security.Cryptography.RSAPKCS1SignatureFormatter" /></item>
+                    <item>Deformatter algorithm - <see cref="T:System.Security.Cryptography.RSAPKCS1SignatureDeformatter" /></item>
+                </list>
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Cryptography.RSAPKCS1SHA256SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Cryptography.RSAPKCS1SHA256SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)">
+            <inheritdoc />
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.XmlSigning">
+            <summary>
+            Classe com os metodos para assinatura e validação de assinatura de xml usando Hash Sha1.
+            </summary>
+            <summary>
+            Classe com os metodos para assinatura e validação de assinatura de xml usando Hash Sha1.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSigning.AssinarXml(System.String,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,ACBr.Net.DFe.Core.SignDigest)">
+            <summary>
+            Assina a XML usando o certificado informado.
+            </summary>
+            <param name="xml">O Xml.</param>
+            <param name="docElement">O elemento principal do xml a ser assinado.</param>
+            <param name="infoElement">O elemento a ser assinado.</param>
+            <param name="pCertificado">O certificado.</param>
+            <param name="comments">Se for <c>true</c> vai inserir a tag #withcomments no transform.</param>
+            <param name="digest">Algoritmo usando para gerar o hash por padrão SHA1.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSigning.AssinarXmlTodos(System.String,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,ACBr.Net.DFe.Core.SignDigest)">
+            <summary>
+            Assina Multiplos elementos dentro da Xml.
+            </summary>
+            <param name="xml">O Xml.</param>
+            <param name="docElement">O elemento principal do xml a ser assinado.</param>
+            <param name="infoElement">O elemento a ser assinado.</param>
+            <param name="certificado">O certificado.</param>
+            <param name="comments">Se for <c>true</c> vai inserir a tag #withcomments no transform.</param>
+            <param name="digest">Algoritmo usando para gerar o hash por padrão SHA1.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSigning.AssinarDocumento(System.Xml.XmlDocument,System.String,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,ACBr.Net.DFe.Core.SignDigest)">
+            <summary>
+            Assina o xml.
+            </summary>
+            <param name="doc">O Xml.</param>
+            <param name="docElement">O elemento principal do xml a ser assinado.</param>
+            <param name="infoElement">O elemento a ser assinado.</param>
+            <param name="signAtribute">O atributo identificador do elemento a ser assinado.</param>
+            <param name="certificado">O certificado.</param>
+            <param name="comments">Se for <c>true</c> vai inserir a tag #withcomments no transform.</param>
+            <param name="digest">Algoritmo usando para gerar o hash por padrão SHA1.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+            <exception cref="T:ACBr.Net.DFe.Core.ACBrDFeException">Erro ao efetuar assinatura digital.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSigning.AssinarDocumento``1(ACBr.Net.DFe.Core.Document.DFeSignDocument{``0},System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,ACBr.Net.DFe.Core.SignDigest,ACBr.Net.DFe.Core.Common.DFeSaveOptions,System.String@)">
+            <summary>
+            Gera a assinatura do xml e retorna uma instancia da classe <see cref="T:ACBr.Net.DFe.Core.Document.DFeSignature"/>.
+            </summary>
+            <typeparam name="TDocument">The type of the t document.</typeparam>
+            <param name="document">The document.</param>
+            <param name="certificado">The certificado.</param>
+            <param name="comments">if set to <c>true</c> [comments].</param>
+            <param name="digest">The digest.</param>
+            <param name="options">The options.</param>
+            <returns>DFeSignature.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSigning.ValidarAssinatura(System.Xml.XmlDocument)">
+            <summary>
+            Validar a assinatura do Xml
+            </summary>
+            <param name="doc">o documento xml</param>
+            <param name="docElement">O elemento principal do xml onde esta a tag Signature.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeCommunicationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeCommunicationException" /> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeCommunicationException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeCommunicationException" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeCommunicationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeCommunicationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeCommunicationException.#ctor(System.Exception,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeCommunicationException" /> class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeCommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.ACBrDFeException">
+            <summary>
+            Classe ACBrDFeException.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeException" /> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeException"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeException.#ctor(System.Exception,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeException"/> class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeException" /> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeValidationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeValidationException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeValidationException.#ctor(System.Exception,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.ACBrDFeValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.ACBrDFeValidationException" /> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeAttributeAttribute">
+            <summary>
+            Class DFeAttributeAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeAttributeAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeAttributeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+            <param name="name">The Name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeAttributeAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute" /> class.
+            </summary>
+            <param name="tag">The Name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute.MinSize">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute.MaxSize">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute" /> class.
+            </summary>
+            <param name="tag">The Name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeCollectionAttribute" /> class.
+            </summary>
+            <param name="tag">The Name.</param>
+            <param name="itemName">The Name.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.Descricao">
+            <summary>
+            Gets or sets the descricao.
+            </summary>
+            <value>The descricao.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+            <value>The Name.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.ItemName">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+            <value>The Name.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.Namespace">
+            <summary>
+            Gets or sets the name space.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.Ocorrencia">
+            <summary>
+            Gets or sets the ocorrencias.
+            </summary>
+            <value>The ocorrencias.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.MinSize">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryAttribute.MaxSize">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute" /> class.
+            </summary>
+            <param name="tag">Nome da tag.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute" /> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.Namespace">
+            <summary>
+            Gets or sets the name space.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryKeyAttribute.AsAttribute">
+            <summary>
+            Gets or sets the AsAttribute.
+            </summary>
+            <value>The AsAttribute.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute" /> class.
+            </summary>
+            <param name="tag">Nome da tag.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeDictionaryValueAttribute.Namespace">
+            <summary>
+            Gets or sets the name space.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute">
+            <summary>
+            Classe DFeElementAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+            <seealso cref="T:ACBr.Net.DFe.Core.DFeBaseAttribute" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+            <param name="tag">The Name.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute.#ctor(ACBr.Net.DFe.Core.Serializer.TipoCampo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute.Namespace">
+            <summary>
+            Gets or sets the name space.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeElementAttribute.UseCData">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeEnumAttribute">
+            <summary>
+            Class DFeEnumAttribute. This class cannot be inherited.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeEnumAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeEnumAttribute"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeEnumAttribute.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeIgnoreAttribute">
+            <summary>
+            Class DFeIgnoreAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeItemAttribute">
+            <summary>
+            Class DFeItemAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeItemAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeItemAttribute" /> class.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Attributes.DFeRootAttribute">
+            <summary>
+            Class DFeRootAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeRootAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeRootAttribute" /> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeRootAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeRootAttribute" /> class.
+            </summary>
+            <param name="root">The Namespace.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement.#ctor">
+            <summary>
+            Inicializa uma nova intância da classe <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement"/>.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement.#ctor(System.String)">
+            <summary>
+            Inicializa uma nova intância da classe <see cref="T:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement"/>.
+            </summary>
+            <param name="signElement">O elemento a ser assinado.</param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement.SignElement">
+            <summary>
+            Define/retorna o elemento a ser assinado.
+            </summary>
+            <value>The sign element.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Attributes.DFeSignInfoElement.SignAtribute">
+            <summary>
+            Define/retorna o atributo identificador do elemento a ser assinado.
+            </summary>
+            <value>The sign atribute.</value>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.CertificadoDigital">
+            <summary>
+            Classe CertificadoDigital.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.CertificadoDigital.SelecionarCertificado(System.String)">
+            <summary>
+            Busca certificados instalado se informado uma serie
+            senão abre caixa de dialogos de certificados.
+            </summary>
+            <param name="cerSerie">Serie do certificado.</param>
+            <returns>X509Certificate2.</returns>
+            <exception cref="T:System.Exception">
+            Nenhum certificado digital foi selecionado ou o certificado selecionado está com problemas.
+            or
+            Certificado digital não encontrado
+            or
+            </exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.CertificadoDigital.SelecionarCertificado(System.String,System.String)">
+            <summary>
+            Seleciona um certificado informando o caminho e a senha.
+            </summary>
+            <param name="caminho">O caminho.</param>
+            <param name="senha">A senha.</param>
+            <returns>X509Certificate2.</returns>
+            <exception cref="T:System.Exception">Arquivo do Certificado digital não encontrado</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.CertificadoDigital.SelecionarCertificado(System.Byte[],System.String)">
+            <summary>
+            Seleciona um certificado passando um array de bytes.
+            </summary>
+            <param name="certificado">O certificado.</param>
+            <param name="senha">A senha.</param>
+            <returns>X509Certificate2.</returns>
+            <exception cref="T:System.Exception">Arquivo do Certificado digital não encontrado</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.CertificadoDigital.ExibirCertificado(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Exibi o certificado usando a ui nativa do windows.
+            </summary>
+            <param name="certificado"></param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1">
+            <summary>
+            Classe DFeCollection.
+            </summary>
+            <typeparam name="TTipo"></typeparam>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/> class.
+            </summary>
+            <param name="capacity">The source.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.AddNew">
+            <summary>
+            Adds an object to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/>.
+            </summary>
+            <returns>T.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.Add(`0)">
+            <summary>Adds an object to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/>.</summary>
+            <param name="item">The object to be added to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/>. The value can be null for reference types.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.Insert(System.Int32,`0)">
+            <summary>Inserts an element into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/> at the specified index.</summary>
+            <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
+            <param name="item">The object to insert. The value can be null for reference types.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="index" /> is less than 0.-or-<paramref name="index" /> is greater than <see cref="!:DFeCollection&lt;T&gt;.Count"/>.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})">
+            <summary>Inserts the elements of a collection into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/> at the specified index.</summary>
+            <param name="index">The zero-based index at which the new elements should be inserted.</param>
+            <param name="collection">The collection whose elements should be inserted into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/>. The collection itself cannot be null, but it can contain elements that are null, if type <paramref name="T" /> is a reference type.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="collection" /> is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="index" /> is less than 0.-or-<paramref name="index" /> is greater than <see cref="!:DFeCollection&lt;T&gt;.Count"/>.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeCollection`1.op_Implicit(`0[])~ACBr.Net.DFe.Core.Collection.DFeCollection{`0}">
+            <summary>
+            Performs an implicit conversion from <see cref="T:TTipo[]"/> to <see cref="T:ACBr.Net.DFe.Core.Collection.DFeCollection`1"/>.
+            </summary>
+            <param name="source">The source.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2">
+            <inheritdoc />
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2.Parent">
+            <summary>
+            Gets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2.AddNew">
+            <summary>
+            Adds an object to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/>.
+            </summary>
+            <returns>T.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2.Add(`0)">
+            <summary>Adds an object to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/>.</summary>
+            <param name="item">The object to be added to the end of the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/>. The value can be null for reference types.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2.Insert(System.Int32,`0)">
+            <summary>Inserts an element into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/> at the specified index.</summary>
+            <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
+            <param name="item">The object to insert. The value can be null for reference types.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="index" /> is less than 0.-or-<paramref name="index" /> is greater than <see cref="!:DFeParentCollection&lt;T, T&gt;.Count"/>.</exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})">
+            <summary>Inserts the elements of a collection into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/> at the specified index.</summary>
+            <param name="index">The zero-based index at which the new elements should be inserted.</param>
+            <param name="collection">The collection whose elements should be inserted into the <see cref="T:ACBr.Net.DFe.Core.Collection.DFeParentCollection`2"/>. The collection itself cannot be null, but it can contain elements that are null, if type <paramref name="T" /> is a reference type.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="collection" /> is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="index" /> is less than 0.-or-<paramref name="index" /> is greater than <see cref="!:DFeParentCollection&lt;T, T&gt;.Count"/>.</exception>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Collection.DFeParentItem`2">
+              <summary>
+            
+              </summary>
+              <typeparam name="TParent"></typeparam>
+             <typeparam name="TTipo"></typeparam>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Collection.DFeParentItem`2.Parent">
+            <summary>
+            Define/retorna a classe NFe parente deste elemento.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Collection.DFeParentItem`2.OnParentChanged">
+            <summary>
+            Metodo chamado quando muda o parent.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Document.DFeDocument`1">
+            <summary>
+            Class DFeDocument.
+            </summary>
+            <typeparam name="TDocument">The type of the t document.</typeparam>
+            <seealso cref="T:ACBr.Net.Core.Generics.GenericClone`1" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeDocument`1.Load(System.String,System.Text.Encoding)">
+            <summary>
+            Carrega o documento.
+            </summary>
+            <param name="document">The document.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>TDocument.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeDocument`1.Load(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            Carrega o documento.
+            </summary>
+            <param name="document">The document.</param>
+            <param name="encoding"></param>
+            <returns>TDocument.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeDocument`1.GetXml(ACBr.Net.DFe.Core.Common.DFeSaveOptions,System.Text.Encoding)">
+            <summary>
+            Retorna o Xml do documento.
+            </summary>
+            <param name="options">The options.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeDocument`1.Save(System.String,ACBr.Net.DFe.Core.Common.DFeSaveOptions,System.Text.Encoding)">
+            <summary>
+            Salva o documento.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="options">The options.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>TDocument.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeDocument`1.Save(System.IO.Stream,ACBr.Net.DFe.Core.Common.DFeSaveOptions,System.Text.Encoding)">
+            <summary>
+            Salva o documento.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="options">The options.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>TDocument.</returns>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.CanonicalizationMethod.Algorithm">
+            <summary>
+            XS04 - Atributo Algorithm de CanonicalizationMethod: http://www.w3.org/TR/2001/REC-xml-c14n-20010315
+            </summary>
+            <value>The algorithm.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeSignature.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Document.DFeSignature"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.DFeSignature.SignedInfo">
+            <summary>
+            XS02 - Grupo da Informação da assinatura
+            </summary>
+            <value>The signed information.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.DFeSignature.SignatureValue">
+            <summary>
+            XS18 - Grupo do Signature Value
+            </summary>
+            <value>The signature value.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.DFeSignature.KeyInfo">
+            <summary>
+            XS19 - Grupo do KeyInfo
+            </summary>
+            <value>The key information.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeSignDocument`1.AssinarDocumento(System.Security.Cryptography.X509Certificates.X509Certificate2,ACBr.Net.DFe.Core.Common.DFeSaveOptions,System.Boolean,ACBr.Net.DFe.Core.SignDigest)">
+            <summary>
+            Assina o xml.
+            </summary>
+            <param name="certificado">The certificado.</param>
+            <param name="comments">if set to <c>true</c> [comments].</param>
+            <param name="digest">The digest.</param>
+            <param name="options">The options.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeSignDocument`1.ValidarAssinaturaDocumento(System.Boolean)">
+            <summary>
+            Valida a assinatura do documento.
+            </summary>
+            <param name="gerarXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.DFeSignDocument`1.ShouldSerializeSignature">
+            <summary>
+            Metodo que define se deve ou não serialziar a assinatura.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.DigestMethod.Algorithm">
+            <summary>
+            XS16 - Atributo Algorithm de DigestMethod: http://www.w3.org/2000/09/xmldsig#sha1
+            </summary>
+            <value>The algorithm.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.KeyInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Document.KeyInfo"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.KeyInfo.X509Data">
+            <summary>
+            XS20 - Grupo X509
+            </summary>
+            <value>The X509 data.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.Reference.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Document.Reference"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.Reference.URI">
+            <summary>
+            XS08 - Atributo URI da tag Reference
+            </summary>
+            <value>The URI.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.Reference.Transforms">
+            <summary>
+            XS10 - Grupo do algorithm de Transform
+            </summary>
+            <value>The transforms.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.Reference.DigestMethod">
+            <summary>
+            XS15 - Grupo do Método de DigestMethod
+            </summary>
+            <value>The digest method.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.Reference.DigestValue">
+            <summary>
+            XS17 - Digest Value (Hash SHA-1 – Base64)
+            </summary>
+            <value>The digest value.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.SignatureMethod.Algorithm">
+            <summary>
+            XS06 - Atributo Algorithm de SignatureMethod: http://www.w3.org/2000/09/xmldsig#rsa-sha1
+            </summary>
+            <value>The algorithm.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Document.SignedInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Document.DFeSignature" /> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.SignedInfo.CanonicalizationMethod">
+            <summary>
+            XS03 - Grupo do Método de Canonicalização
+            </summary>
+            <value>The canonicalization method.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.SignedInfo.SignatureMethod">
+            <summary>
+            XS05 - Grupo do Método de Assinatura
+            </summary>
+            <value>The signature method.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.SignedInfo.Reference">
+            <summary>
+            XS07 - Grupo Reference
+            </summary>
+            <value>The reference.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.Transform.Algorithm">
+            <summary>
+            XS13 - Atributos válidos Algorithm do Transform:
+            <para>http://www.w3.org/TR/2001/REC-xml-c14n-20010315</para><para>http://www.w3.org/2000/09/xmldsig#enveloped-signature</para>
+            </summary>
+            <value>The algorithm.</value>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Document.X509Data.X509Certificate">
+            <summary>
+            XS21 - Certificado Digital X509 em Base64
+            </summary>
+            <value>The X509 certificate.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Extensions.DFeExtensions.ShouldIgnoreProperty(System.Reflection.PropertyInfo)">
+            <summary>
+            Checks if a property should not be serialized.
+            </summary>
+            <param name="property">The property to check.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Extensions.DFeExtensions.ShouldSerializeProperty(System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            Checks if a property should not be serialized.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="item">The item.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Extensions.EnumExtensions.GetDFeValue``1(``0)">
+            <summary>
+            Retorna o valor do Enum definido pelo DFeEnumAttribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Extensions.EnumExtensions.ToCodeUf(ACBr.Net.DFe.Core.Common.DFeSiglaUF)">
+             <summary>
+            
+             </summary>
+             <param name="uf"></param>
+             <returns></returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Extensions.EnumExtensions.ToSiglaUF(ACBr.Net.DFe.Core.Common.DFeCodUF)">
+             <summary>
+            
+             </summary>
+             <param name="uf"></param>
+             <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.DFeBaseAttribute">
+            <summary>
+            Interface IDFeElement
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgMaior">
+            <summary>
+            The er r_ ms g_ maior
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgMenor">
+            <summary>
+            The er r_ ms g_ menor
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgVazio">
+            <summary>
+            The er r_ ms g_ vazio
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgInvalido">
+            <summary>
+            The er r_ ms g_ invalido
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgMaximoDecimais">
+            <summary>
+            The er r_ ms g_ maxim o_ decimais
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgMaiorMaximo">
+            <summary>
+            The er r_ ms g_ maio r_ maximo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgFinalMenorInicial">
+            <summary>
+            The er r_ ms g_ fina l_ meno r_ inicial
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgArquivoNaoEncontrado">
+            <summary>
+            The er r_ ms g_ arquiv o_ na o_ encontrado
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgSomenteUm">
+            <summary>
+            The er r_ ms g_ soment e_ um
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.ErrMsgMenorMinimo">
+            <summary>
+            The er r_ ms g_ meno r_ minimo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.DscCnpj">
+            <summary>
+            The ds c_ CNPJ
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DFeSerializer.DscCpf">
+            <summary>
+            The ds c_ CPF
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1"/> class.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Serializer.DFeSerializer.Options">
+            <summary>
+            Gets the options.
+            </summary>
+            <value>The options.</value>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.CreateSerializer(System.Type)">
+            <summary>
+            Creates the serializer.
+            </summary>
+            <param name="tipo">The tipo.</param>
+            <returns>ACBr.Net.DFe.Core.Serializer.DFeSerializer.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.Serialize(System.Object,System.String)">
+            <summary>
+            Serializes the specified item.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="path">The xml.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.Serialize(System.Object,System.IO.Stream)">
+            <summary>
+            Serializes the specified item.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="stream">The stream.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.Deserialize(System.String)">
+            <summary>
+            Deserializes the specified xml.
+            </summary>
+            <param name="xml">The xml.</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer.Deserialize(System.IO.Stream)">
+            <summary>
+            Deserializes the specified stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1">
+            <summary>
+            Class DFeSerializer. This class cannot be inherited.
+            </summary>
+            <typeparam name="TClass"></typeparam>
+            <seealso>
+                <cref>ACBr.Net.DFe.Core.Serializer.DFeSerializerBase</cref>
+            </seealso>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1"/> class.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.CreateSerializer``1">
+            <summary>
+            Creates the serializer.
+            </summary>
+            <typeparam name="TCreate"></typeparam>
+            <returns>DFeSerializer.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.Serialize(`0,System.String)">
+            <summary>
+            Serializes the specified item.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="path">The xml.</param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.Serialize(`0,System.IO.Stream)">
+            <summary>
+            Serializes the specified item.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="stream">The stream.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.Deserialize(System.String)">
+            <summary>
+            Deserializes the specified xml.
+            </summary>
+            <param name="path">The xml.</param>
+            <returns>T.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.DFeSerializer`1.Deserialize(System.IO.Stream)">
+            <summary>
+            Deserializes the specified xml.
+            </summary>
+            <param name="stream">The xml.</param>
+            <returns>T.</returns>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.DictionarySerializer.Logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.CollectionSerializer.Serialize(System.Reflection.PropertyInfo,System.Object,ACBr.Net.DFe.Core.Serializer.SerializerOptions)">
+            <summary>
+            Serializes the specified value.
+            </summary>
+            <param name="prop">The property.</param>
+            <param name="parentObject">The parent object.</param>
+            <param name="options">The options.</param>
+            <returns>XElement.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.CollectionSerializer.Deserialize(System.Type,System.Xml.Linq.XElement[],System.Reflection.PropertyInfo,System.Object,ACBr.Net.DFe.Core.Serializer.SerializerOptions)">
+            <summary>
+            Deserializes the specified type.
+            </summary>
+            <param name="type">The type of the list to deserialize.</param>
+            <param name="parent">The parent.</param>
+            <param name="prop">The property.</param>
+            <param name="parentItem"></param>
+            <param name="options">Indicates how the output is deserialized.</param>
+            <returns>The deserialized list from the XElement.</returns>
+            <exception cref="T:System.InvalidOperationException">Could not deserialize this non generic dictionary without more type information.</exception>
+            Deserializes the XElement to the list (e.g. List<T />, Array of a specified type using options.
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.ObjectSerializer.logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.PrimitiveSerializer.Serialize(ACBr.Net.DFe.Core.DFeBaseAttribute,System.Object,System.Reflection.PropertyInfo,ACBr.Net.DFe.Core.Serializer.SerializerOptions,System.Int32)">
+            <summary>
+            Serializes a fundamental primitive object (e.g. string, int etc.) into a XElement using options.
+            </summary>
+            <param name="tag">The name of the primitive to serialize.</param>
+            <param name="item">The item.</param>
+            <param name="prop">The property.</param>
+            <param name="options">Indicates how the output is formatted or serialized.</param>
+            <param name="idx"></param>
+            <returns>The XElement representation of the primitive.</returns>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.PrimitiveSerializer.Deserialize(ACBr.Net.DFe.Core.DFeBaseAttribute,System.Xml.Linq.XObject,System.Object,System.Reflection.PropertyInfo,ACBr.Net.DFe.Core.Serializer.SerializerOptions,System.Int32)">
+            <summary>
+            Deserializes the XElement to the fundamental primitive (e.g. string, int etc.) of a specified type using options.
+            </summary>
+            <param name="tag">The tag.</param>
+            <param name="parentElement">The parent XElement used to deserialize the fundamental primitive.</param>
+            <param name="item">The item.</param>
+            <param name="prop">The property.</param>
+            <param name="options">The options.</param>
+            <returns>The deserialized fundamental primitive from the XElement.</returns>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Serializer.SerializerOptions">
+            <summary>
+            Class SerializerOptions. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Serializer.SerializerOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ACBr.Net.DFe.Core.Serializer.DFeSerializer" /> class.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Serializer.TipoCampo">
+            <summary>
+            Enum TipoCampo
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Str">
+            <summary>
+            The string
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Int">
+            <summary>
+            The int
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Dat">
+            <summary>
+            The dat
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.DatHor">
+            <summary>
+            The dat hor
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.DatHorTz">
+            <summary>
+            The dat hor tz
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.StrNumber">
+            <summary>
+            The esp
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.StrNumberFill">
+            <summary>
+            The string number fill
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.De2">
+            <summary>
+            The de2
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.De3">
+            <summary>
+            The de3
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.De4">
+            <summary>
+            The de4
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.De10">
+            <summary>
+            The de10
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Hor">
+            <summary>
+            The hor
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.De6">
+            <summary>
+            The de6
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.DatCFe">
+            <summary>
+            The dat c fe
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.HorCFe">
+            <summary>
+            The hor c fe
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Enum">
+            <summary>
+            The enum
+            </summary>
+        </member>
+        <member name="F:ACBr.Net.DFe.Core.Serializer.TipoCampo.Custom">
+            <summary>
+            The custom
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeCadEndereco">
+            <summary>
+            Tipo Dados do Endereço
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.XLgr">
+            <summary>
+            Define/retorna o logradouro.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.Nro">
+            <summary>
+            Define/retorna o número.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.XCpl">
+            <summary>
+            Define/retorna o complemento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.XBairro">
+            <summary>
+            Define/retorna o bairro.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.CMun">
+            <summary>
+            Define/retorna o código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.XMun">
+            <summary>
+            Define/retorna o nome do município.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeCadEndereco.CEP">
+            <summary>
+            Define/retorna o CEP.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeConsultaCadastroServiceClient`8.ConsultaCadastro(ACBr.Net.DFe.Core.Common.DFeSiglaUF,ACBr.Net.DFe.Core.Common.DFeCodUF,System.String,System.String)">
+            <summary>
+            Consulta o cadastro do contribuinte.
+            </summary>
+            <param name="uf"></param>
+            <param name="ufConsulta"></param>
+            <param name="cpfCNPJ"></param>
+            <param name="IE"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeIndCred">
+            <summary>
+            Indicador de credenciamento.
+            </summary>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeInfCad">
+            <summary>
+            Informações cadastrais do contribuinte consultado.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.IE">
+            <summary>
+            Define/retorna o número da Inscrição Estadual do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.CNPJ">
+            <summary>
+            Define/retorna o número do CNPJ  do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.CPF">
+            <summary>
+            Define/retorna o número do CPF do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.UF">
+            <summary>
+            Define/retorna a sigla da UF de localização do contribuinte.
+            Em algumas situações, a UF de localização pode ser diferente da UF consultada.
+            Ex. IE de Substituto Tributário.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.CSit">
+            <summary>
+            Define/retorna a situação cadastral do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.IndCredNFe">
+            <summary>
+            Define/retorna o indicador de contribuinte credenciado a emitir NF-e.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.IndCredCTe">
+            <summary>
+            Define/retorna o indicador de contribuinte credenciado a emitir CT-e.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.XNome">
+            <summary>
+            Define/retorna a razão social ou nome do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.XFant">
+            <summary>
+            Define/retorna o nome fantasia ou nome do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.XRegApur">
+            <summary>
+            Define/retorna o regime de apuração do ICMS.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.CNAE">
+            <summary>
+            Define/retorna o CNAE fiscal do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.DIniAtiv">
+            <summary>
+            Define/retorna a data de início de atividades do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.DUltSit">
+            <summary>
+            Define/retorna a data da última modificação da situação cadastral do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.DBaixa">
+            <summary>
+            Define/retorna a data de ocorrência da baixa do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.IEUnica">
+            <summary>
+            Define/retorna a inscrição estadual única.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.IEAtual">
+            <summary>
+            Define/retorna a inscrição estadual atual.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCad.Endereco">
+            <summary>
+            Define/retorna o endereço.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.VersaoAplicacao">
+            <summary>
+            Define/retorna a versão do Aplicativo que processou o pedido de consulta de cadastro.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.CStat">
+            <summary>
+            Define/retorna o código do status da mensagem enviada.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.Motivo">
+            <summary>
+            Define/retorna a descrição literal do status do serviço solicitado.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.UF">
+            <summary>
+            Define/retorna a sigla da UF consultada, utilizar SU para SUFRAMA.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.IE">
+            <summary>
+            Define/retorna o número da Inscrição Estadual do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.CNPJ">
+            <summary>
+            Define/retorna o número do CNPJ  do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.CPF">
+            <summary>
+            Define/retorna o número do CPF do contribuinte.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.DhCons">
+            <summary>
+            Define/retorna a data da Consulta.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.CodUF">
+            <summary>
+            Define/retorna o código da UF de atendimento.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeInfCons.InfCad">
+            <summary>
+            Define/retorna as informações cadastrais do contribuinte consultado.
+            </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServices`2.Item(`1,ACBr.Net.DFe.Core.Common.DFeTipoEmissao)">
+             <summary>
+            
+             </summary>
+             <param name="versao"></param>
+             <param name="emissao"></param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceEnvironment`1.Item(`0)">
+             <summary>
+            
+             </summary>
+             <param name="tipo"></param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeServiceClient`9">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.#ctor(`0,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <inheritdoc />
+             <summary>
+             </summary>
+             <param name="config"></param>
+            <param name="url"></param>
+            <param name="certificado"></param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.Configuracoes">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.Schema">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.ArquivoEnvio">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.ArquivoResposta">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.EnvelopeSoap">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.RetornoWS">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.ValidateMessage(System.String)">
+            <summary>
+            Função para validar a menssagem a ser enviada para o webservice.
+            </summary>
+            <param name="xml"></param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.ValidateMessage(System.String,`7)">
+            <summary>
+            Função para validar a menssagem a ser enviada para o webservice.
+            </summary>
+            <param name="xml"></param>
+            <param name="schema"></param>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.GravarSoap(System.String,System.String)">
+            <summary>
+            Salvar o arquivo xml no disco de acordo com as propriedades.
+            </summary>
+            <param name="conteudoArquivo"></param>
+            <param name="nomeArquivo"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.BeforeSendDFeRequest(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClient`9.AfterReceiveDFeReply(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeServiceClientBase`1">
+            <summary>
+            Class DFeServiceClientBase.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:System.ServiceModel.ClientBase`1" />
+            <seealso cref="T:ACBr.Net.Core.Logging.IACBrLog" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeServiceClientBase`1.#ctor(System.String,System.Nullable{System.TimeSpan},System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Service.DFeServiceClientBase`1"/>.
+            </summary>
+            <param name="url"></param>
+            <param name="timeOut"></param>
+            <param name="certificado"></param>
+        </member>
+        <member name="P:ACBr.Net.DFe.Core.Service.DFeServiceInfo`2.Item(ACBr.Net.DFe.Core.Common.DFeTipoAmbiente,ACBr.Net.DFe.Core.Common.DFeSiglaUF)">
+             <summary>
+            
+             </summary>
+             <param name="ambiente"></param>
+             <param name="uf"></param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.Service.DFeSoap12ServiceClientBase`1">
+            <summary>
+            Class DFeSoap12ServiceClientBase.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:ACBr.Net.DFe.Core.Service.DFeServiceClientBase`1" />
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.Service.DFeSoap12ServiceClientBase`1.#ctor(System.String,System.Nullable{System.TimeSpan},System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Inicializa uma nova instancia da classe <see cref="T:ACBr.Net.DFe.Core.Service.DFeSoap12ServiceClientBase`1"/>.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="timeOut">The time out.</param>
+            <param name="certificado">The certificado.</param>
+        </member>
+        <member name="T:ACBr.Net.DFe.Core.XmlSchemaValidation">
+            <summary>
+            Classe estatica para validação de xml usando schema.
+            </summary>
+        </member>
+        <member name="M:ACBr.Net.DFe.Core.XmlSchemaValidation.ValidarXml(System.String,System.String,System.String[]@,System.String[]@)">
+            <summary>
+            Valida o arquivo XML com o schema informado.
+            </summary>
+            <param name="arquivoXml">The arquivo XML.</param>
+            <param name="schema">The schema nf.</param>
+            <param name="erros">The erro.</param>
+            <param name="avisos">The avisos.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+    </members>
+</doc>
